@@ -316,6 +316,11 @@ body {
   box-shadow: 0 0 0 0.25rem rgba(10, 46, 82, 0.25);
 }
 
+#filtersContainer option{
+  background-color: #0a2e52;
+}
+
+
 /* Botón de filtros */
 #toggleFiltersBtn {
   background-color: var(--primary-color);
