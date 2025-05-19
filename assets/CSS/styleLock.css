@@ -1,0 +1,142 @@
+/* Variables globales */
+:root {
+  --primary-color: #0a2e52;
+  --secondary-color: #134184;
+  --dark-bg: #343a40;
+  --text-light: #ffffff;
+  --text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  --transition-speed: 0.3s;
+}
+
+/* Sobrescritura de Bootstrap */
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+/* Componente de logo */
+.logo-container {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  height: 40px;
+  overflow: hidden;
+  transition: width var(--transition-speed) ease;
+}
+
+.logo-default,
+.logo-hover {
+  position: absolute;
+  top: 0;
+  transition: opacity var(--transition-speed) ease;
+}
+
+.logo-default {
+  left: 0;
+}
+
+.logo-hover {
+  left: 45px;
+  opacity: 0;
+  width: auto;
+}
+
+.logo-container:hover {
+  width: 250px;
+}
+
+.logo-container:hover .logo-default {
+  opacity: 0;
+}
+
+.logo-container:hover .logo-hover {
+  opacity: 1;
+}
+
+/* Barra de navegación secundaria */
+.secondary-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+
+.secondary-navbar .btn {
+  transition: all var(--transition-speed) ease;
+  font-weight: bold;
+}
+
+.secondary-navbar .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.secondary-navbar .btn:focus,
+.secondary-navbar .btn.active {
+  background-color: var(--primary-color);
+  color: var(--text-light) !important;
+}
+
+/* Sección Hero */
+#hero {
+  background: url('../imagenes/Blue-Lock-heroSeccion.jpg') center/cover no-repeat;
+  background-blend-mode: overlay;
+  min-height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: var(--text-shadow);
+}
+
+/* Tipografía personalizada */
+@font-face {
+  font-family: 'BlueLock';
+  src: url(../tipografia/Bluelock.otf);
+  font-display: swap;
+}
+
+#que-es h2,
+#que-es p {
+  font-family: 'BlueLock', sans-serif;
+  font-weight: 500;
+  letter-spacing: 3px;
+  align-items: center;
+}
+
+/*Estilo ultima imagen*/
+#que-es article:last-child{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+}
+
+#que-es article:last-child img{
+    max-width: 80%;
+    margin: 0 auto;
+    display: block
+}
+
+/* Efectos hover */
+.card:hover {
+  transform: translateY(-5px);
+  transition: transform var(--transition-speed);
+}
+
+/* Sección de inicio */
+#inicio {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('blue-lock-banner.jpg') center/cover;
+  padding: 100px 0 !important;
+}
+
+/* Estilos para imágenes */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.shadow {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}

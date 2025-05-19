@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Lock Fan Page - Jugadores</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/CSS/styleLock.css">
+    <link rel="stylesheet" href="assets/CSS/jugadores.css">
+</head>
+
+<body>
+    <!-- Navbar con Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index-lock.html">
+                <div class="logo-container">
+                    <img src="assets/imagenes/BLUE-LOCK-logoV1-header.png" alt="Blue Lock" height="50">
+                    <img src="assets/imagenes/BLUE-LOCK-logoV2-header.png" alt="Blue Lock Completo" class="logo-hover"
+                        height="40">
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Barra de navegación secundaria (botones) -->
+    <div class="secondary-navbar py-2 bg-dark">
+        <div class="container">
+            <div class="d-flex justify-content-center flex-wrap">
+                <a href="index-lock.html" class="btn btn-outline-light mx-2 mb-2">¿Qué es Blue Lock?</a>
+                <a href="jugadores.html" class="btn btn-outline-light mx-2 mb-2">Jugadores</a>
+                <a href="equipo.html" class="btn btn-outline-light mx-2 mb-2">Equipos</a>
+                <a href="#escenarios" class="btn btn-outline-light mx-2 mb-2">Escenarios</a>
+                <a href="#contacto" class="btn btn-outline-light mx-2 mb-2">Apuestas</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Contenido-->
+    <section>
+        <div class="full-width-container">
+
+            <div class="player-list-section">
+                <!-- Botón para mostrar/ocultar filtros -->
+                <button id="toggleFiltersBtn" class="btn btn-primary w-100 mb-2">
+                    <i class="fas fa-filter me-2"></i> Mostrar Filtros
+                </button>
+
+
+
+                <!-- Contenedor de filtros (oculto inicialmente) -->
+                <div id="filtersContainer" class="player-search-container p-3 bg-dark" style="display: none;">
+
+
+                    <input type="text" id="searchInput" class="form-control mb-2" placeholder="Buscar jugador..." />
+                    <!--Selector de ordenamiento-->
+                    <div class="sort-options-container p-3 bg-dark">
+                        <select id="sortPlayers" class="form-select">
+                            <option value="default">Ordenar por: Predeterminado</option>
+                            <option value="initial_rank">Ranking inicial (↑)</option>
+                            <option value="current_rank">Ranking actual (↑)</option>
+                        </select>
+                    </div>
+
+                    <select id="filterInitialRank" class="form-select mb-2">
+                        <option value="all">Ranking inicial: Todos</option>
+                        <option value="top100">Top 100</option>
+                        <option value="200-300">200-300</option>
+                        <option value="descalificado">Descalificados</option>
+                    </select>
+
+                    <select id="filterCurrentRank" class="form-select mb-2">
+                        <option value="all">Ranking actual: Todos</option>
+                        <option value="top10">Top 10</option>
+                        <option value="top50">Top 50</option>
+                        <option value="descalificado">Descalificados</option>
+                        <option value="whiteCard">White Card</option>
+                    </select>
+                </div>
+
+                <!-- Lista de jugadores -->
+                <div id="playerList"></div>
+            </div>
+
+            <!--Imagenes-->
+            <div class="player-image-section">
+                <img id="playerMainImage" src="assets/imagenes/jinpachi-ego-2.png" alt="Jugador" class="player-image">
+            </div>
+
+
+            <!--Infomacion-->
+
+            <div class="player-info-section" id="playerInfo">
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center p-3">
+        <p class="mb-0">&copy; 2024 Blue Lock Fan Page</p>
+    </footer>
+
+    <!-- Bootstrap JS + Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Tu JS personalizado -->
+    <script src="script.js"></script>
+    <script src="assets/JS/jugadores.js"></script>
+</body>
+
+</html>

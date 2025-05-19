@@ -1,0 +1,391 @@
+/* Variables de color y tipografía */
+:root {
+  --primary-color: #0a2e52;
+  --secondary-color: #134184;
+  --text-color: #333;
+  --light-bg: #f0f2f5;
+  --dark-bg: #061b30;
+  --white: #ffffff;
+  --gray-light: #e9ecef;
+  --gray-medium: #d1d7dc;
+  --font-primary: 'Bebas Neue', sans-serif;
+  --font-secondary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilos base */
+body {
+  font-family: var(--font-secondary);
+  margin: 0;
+  padding: 0;
+  background-color: var(--light-bg);
+  color: var(--text-color);
+}
+
+/* Layout principal */
+.full-width-container {
+  display: flex;
+  min-height: 100vh;
+  height: calc(170vh - 120px); /* Ajuste según navbar/footer */
+  overflow: hidden;
+}
+
+/* Sección de lista de jugadores */
+.player-list-section {
+  width: 280px;
+  background-color: var(--primary-color);
+  padding: 1rem 0;
+  overflow-y: auto;
+  z-index: 1;
+}
+
+.player-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  color: var(--white);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-left: 4px solid transparent;
+}
+
+.player-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.player-item.active {
+  background-color: rgb(59, 61, 148);
+  border-left: 4px solid var(--white);
+}
+
+.player-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 1rem;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Sección de imagen del jugador */
+.player-image-section {
+  width: 35%;
+  background: linear-gradient(to bottom, var(--gray-light), var(--gray-medium));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.player-image {
+  max-height: 155vh;
+  width: auto;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  position: relative;
+  z-index: 1;
+}
+
+/* Efecto de animación para cambio de imagen */
+.player-image-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg,
+          rgba(10, 46, 82, 0) 35%,
+          rgba(10, 46, 82, 0.8) 50%,
+          rgba(10, 46, 82, 0) 100%);
+  z-index: 2;
+  transition: left 0.6s ease;
+}
+
+.player-image.hidden {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+.animating::before {
+  left: 100%;
+}
+
+/* Sección de información del jugador */
+.player-info-section {
+  flex: 1;
+  background-color: var(--white);
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.main-title {
+  font-family: var(--font-primary);
+  letter-spacing: 1px;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--dark-bg);
+}
+
+/* Componentes de estadísticas */
+.stat-card {
+  background-color: var(--gray-light);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.stat-detail-item {
+  margin-bottom: 1rem;
+}
+
+.stat-name {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.progress {
+  height: 8px;
+  background-color: var(--gray-medium);
+}
+
+.progress-bar {
+  background-color: var(--primary-color);
+}
+
+/* Gráfico hexagonal */
+.hexagon-container {
+  width: 320px;
+  height: 320px;
+  margin: 2rem auto;
+  position: relative;
+}
+
+.hexagon-grid {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(circle at center, transparent 0%, transparent 24%, var(--gray-light) 25%, transparent 26%),
+    radial-gradient(circle at center, transparent 0%, transparent 49%, var(--gray-light) 50%, transparent 51%),
+    radial-gradient(circle at center, transparent 0%, transparent 74%, var(--gray-light) 75%, transparent 76%),
+    conic-gradient(from 60deg, var(--gray-light) 0%, var(--gray-light) 16.66%, transparent 16.66%, transparent 33.33%, var(--gray-light) 33.33%, var(--gray-light) 50%, transparent 50%, transparent 66.66%, var(--gray-light) 66.66%, var(--gray-light) 83.33%, transparent 83.33%, transparent 100%);
+  background-repeat: no-repeat;
+}
+
+.hexagon-stats {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(50% 0%, 83% 25%, 83% 75%, 50% 100%, 17% 75%, 17% 25%);
+  background-color: rgba(57, 89, 230, 0.4);
+}
+
+.stat-point {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: var(--primary-color);
+  border: 2px solid var(--white);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.stat-line {
+  position: absolute;
+  height: 2px;
+  background-color: var(--primary-color);
+  transform-origin: left center;
+}
+
+.stat-labels {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.stat-label {
+  position: absolute;
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  color: var(--primary-color);
+  text-align: center;
+  width: 80px;
+  transform: translateX(-50%);
+}
+
+/* Posicionamiento de etiquetas del gráfico */
+.label-speed {
+  top: 0%;
+  left: 50%;
+}
+
+.label-offense {
+  top: 25%;
+  right: 5%;
+}
+
+.label-defense {
+  bottom: 25%;
+  right: 5%;
+}
+
+.label-shoot {
+  bottom: 0%;
+  left: 50%;
+}
+
+.label-pass {
+  bottom: 25%;
+  left: 5%;
+}
+
+.label-stamina {
+  top: 25%;
+  left: 5%;
+}
+
+/* Habilidades especiales */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.75rem;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background: linear-gradient(to right, var(--gray-light), var(--gray-medium));
+  border-left: 3px solid var(--primary-color);
+}
+
+.skill-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.skill-name {
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+/* Nota de Ego */
+.ego-note {
+  background-color: #f8f9fa;
+  border-left: 4px solid var(--primary-color);
+  padding: 1rem;
+  border-radius: 0 8px 8px 0;
+}
+
+.ego-note p::before,
+.ego-note p::after {
+  content: '"';
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+/* Filtros y búsqueda */
+.player-search-container {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.player-search-container input,
+.player-search-container select {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--white);
+}
+
+.player-search-container input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.player-search-container input:focus,
+.player-search-container select:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: var(--white);
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 0.25rem rgba(10, 46, 82, 0.25);
+}
+
+/* Botón de filtros */
+#toggleFiltersBtn {
+  background-color: var(--primary-color);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+#toggleFiltersBtn:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+}
+
+.sort-options-container {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.sort-options-container select {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.sort-options-container select:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 0 0.25rem rgba(10, 46, 82, 0.25);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.filters-show {
+  display: block !important;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .full-width-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .player-list-section {
+    width: 100%;
+    height: auto;
+    order: 1;
+  }
+
+  .player-info-section {
+    order: 2;
+    padding: 2rem;
+  }
+
+  .player-image-section {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+  }
+
+  .player-image {
+    max-height: 300px;
+  }
+}

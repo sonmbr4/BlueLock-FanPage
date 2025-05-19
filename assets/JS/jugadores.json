@@ -1,0 +1,386 @@
+{
+    "jugadores": {
+        "isagi": {
+            "name": "Isagi Yoichi",
+            "position": "Delantero | Equipo Z | Número 11",
+            "rankingInicial": 299,
+            "rankingActual": 15,
+            "image": "assets/imagenes/Jugadores/Yoichi_Isagi_uniform_anime_design.webp",
+            "icon": "assets/imagenes/Jugadores/Yoichi-Isagi-Icon.png",
+            "stats": {
+                "Velocidad": 77,
+                "defensa": 75,
+                "pase": 78,
+                "dribble": 70,
+                "tiro": 81,
+                "ofensiva": 94
+            },
+            "skills": [
+                "Adaptación directa",
+                "Visión espacial",
+                "Tiro preciso",
+                "Instinto asesino"
+            ],
+            "egoNote": "Un diamante en bruto con instinto asesino. Aún le falta egoísmo, pero su capacidad de adaptación es intrigante. Podría devorar el mundo... si supera sus dudas."
+        },
+        "bachira": {
+            "name": "Bachira Meguru",
+            "position": "Delantero | Equipo Z | Número 9",
+            "rankingInicial": 290,
+            "rankingActual": 7,
+            "image": "assets/imagenes/Jugadores/Meguru_Bachira_uniform.webp",
+            "icon": "assets/imagenes/Jugadores/Meguru-Bachira-Icon.png",
+            "stats": {
+                "Velocidad": 85,
+                "defensa": 90,
+                "pase": 60,
+                "dribble": 82,
+                "tiro": 84,
+                "ofensiva": 80
+            },
+            "skills": [
+                "Dribbling creativo",
+                "Monstruo interior",
+                "Regate imposible",
+                "Velocidad explosiva"
+            ],
+            "egoNote": "Ese monstruo que lleva dentro es fascinante. Jugadores como él son los que harán que el fútbol japonés evolucione. Aunque a veces parece jugar solo por diversión... qué patético."
+        },
+        "Gurimu": {
+            "name": "Gurimu Igarashi",
+            "position": "Delantero | Equipo Z | Número 13",
+            "rankingInicial": 300,
+            "rankingActual": 36,
+            "image": "assets/imagenes/Jugadores/Gurimu_Igarashi_uniform_anime_design.webp",
+            "icon": "assets/imagenes/jugadores/BL_Icon_Gurimu_Igarashi.png",
+            "stats": {
+                "Velocidad": 0,
+                "defensa": 0,
+                "pase": 0,
+                "dribble": 0,
+                "tiro": 0,
+                "ofensiva": 0
+            },
+            "skills": [
+                "Resistencia sobrenatural",
+                "Tiro de suerte",
+                "Molestia defensiva"
+            ],
+            "egoNote": "Un parasito con suerte. Sobrevive, pero no destaca. Si quiere quedarse, deberá aprender a devorar o será devorado"
+        },
+        "Rensuke": {
+            "name": "Rensuke Kunigami",
+            "position": "Delantero | Equipo Z | Número 9",
+            "rankingInicial": 291,
+            "rankingActual": "Wild Card",
+            "image": "assets/imagenes/jugadores/Rensuke_Kunigami_uniform_anime_design.webp",
+            "icon": "assets/imagenes/jugadores/BL_Icon_Rensuke_Kunigami-fotor-bg-remover-20250510144439.png",
+            "stats": {
+                "Velocidad": 85,
+                "defensa": 75,
+                "pase": 65,
+                "dribble": 71,
+                "tiro": 95,
+                "ofensiva": 94
+            },
+            "skills": [
+                "Potencia bruta",
+                "Mentalidad de depredador",
+                "Fisico Apocaliptico"
+            ],
+            "egoNote": "Un 'héroe' quebrado. Ahora solo queda ver si el lobo salvaje dentro de él es real... o solo otro disfraz."
+        },
+        "Wataru": {
+            "name": "Kuon Wataru",
+            "position": "Delantero | Equipo Z | Número 2",
+            "rankingInicial": 293,
+            "rankingActual": "Descalificado",
+            "image": "assets/imagenes/jugadores/Wataru_Kuon_uniform_anime_design.webp",
+            "icon": "assets/imagenes/jugadores/wataru-kuon-icon.png",
+            "stats": {
+                "Velocidad": 0,
+                "defensa": 0,
+                "pase": 0,
+                "dribble": 0,
+                "tiro": 0,
+                "ofensiva": 0
+            },
+            "skills": [
+                "Salto alto"
+            ],
+            "egoNote": "Un traidor por instinto. Cambió su orgullo por migajas de victoria... y al final, ni eso le salvó. El fútbol no perdona a los cobardes."
+        },
+        "Jingo": {
+            "name": "Jingo Raichi",
+            "position": "Delantero | Equipo Z | Número 10",
+            "rankingInicial": 294,
+            "rankingActual": 20,
+            "image": "assets/imagenes/Jugadores/Jingo_Raichi_uniform_anime_design.webp",
+            "icon": "assets/imagenes/jugadores/BL_Icon_Jingo_Raichi.png",
+            "stats": {
+                "Velocidad": 77,
+                "defensa": 90,
+                "pase": 81,
+                "dribble": 79,
+                "tiro": 82,
+                "ofensiva": 82
+            },
+            "skills":[
+                "Presión bestial",
+                "Energia infnita(por su locura)",
+                "Remate de rabia"
+            ],
+            "egoNote":"Un animal sin cerebro. Corre, suda y grita... pero en el fondo, solo es un perro guardián esperando órdenes. ¿Podrá convertir ese frenesí en un arma letal? O terminará como ruido de fondo del verdadero talento."
+        },
+        "Yudai":{
+            "name": "Yudai Imamura",
+            "position":"Delantero | Equipo Z | Número 7",
+            "rankingInicial": 295,
+            "rankingActual": "Descalificado",
+            "image":"assets/imagenes/Jugadores/Yudai_Imamura_uniform_anime_design.webp",
+            "icon":"assets/imagenes/Jugadores/yudai-imamura-icon.png",
+            "stats": {
+                "Velocidad": 0,
+                "defensa": 0,
+                "pase": 0,
+                "dribble": 0,
+                "tiro": 0,
+                "ofensiva": 0
+            },
+            "skills":["Ninguna"],
+            "egoNote":"Un payaso sin circo. Creía que el fútbol era un juego de risas... hasta que Blue Lock le mostró su lugar: el olvido."
+        },
+        "Okuhito":{
+            "name":"Okuhito Iemon",
+            "position":"Delantero | Equipo Z | Número 1",
+            "rankingInicial": 298,
+            "rankingActual":"Descalificado",
+            "image":"assets/imagenes/Jugadores/Okuhito_Iemon_uniform_anime_design.webp",
+            "icon":"assets/imagenes/Jugadores/okuhito-Iemon-Icon.png",
+            "stats": {
+                "Velocidad": 0,
+                "defensa": 0,
+                "pase": 0,
+                "dribble": 0,
+                "tiro": 0,
+                "ofensiva": 0
+            },
+            "skills":["Porteria robusta"],
+            "egoNote":"Invisible hasta para el fracaso. Ni siquiera merece ser un ejemplo de lo que no hacer."
+        },
+        "Naruhaya":{
+            "name":"Naruhaya Asahi",
+            "position": "Delantero | Equipo Z | Número 5",
+            "rankingInicial": 297,
+            "rankingActual": "Descalificado",
+            "image":"assets/imagenes/Jugadores/Asahi_Naruhaya_uniform_anime_design.webp",
+            "icon":"assets/imagenes/Jugadores/Asashi-Naruhaya-icon.png",
+            "stats": {
+                "Velocidad": 0,
+                "defensa": 0,
+                "pase": 0,
+                "dribble": 0,
+                "tiro": 0,
+                "ofensiva": 0
+            },
+            "skills":["Juego sin balón"],
+            "egoNote":"Un jugador que confundió esfuerzo con derecho. Corría en círculos, creyendo que la pasión era suficiente... hasta que el mundo le escupió la verdad: el fútbol solo recompensa a los hambrientos, no a los que solo jadean."
+        },
+        "Gagamaru":{
+            "name":"Gin Gagamaru",
+            "position":"Delantero | Equipo Z | Número 6",
+            "rankingInicial": 296,
+            "rankingActual": 10,
+            "image":"assets/imagenes/Jugadores/Gin_Gagamaru_uniform_anime_design.webp",
+            "icon":"assets/imagenes/Jugadores/Gin-Gagamaru-icon.png",
+            "stats":{
+                "Velocidad": 87,
+                "defensa": 93,
+                "pase": 88,
+                "dribble": 79,
+                "tiro": 80,
+                "ofensiva": 84
+            },
+            "skills":[
+                "Flexibilidad Sobrenatural",
+                "Reflejos de sexto sentido",
+                "Mentalidad fria",
+                "Tecnica de Kempo"
+            ],
+            "egoNote":"Un bruto con instinto. No piensa, actúa. Su cuerpo es un arma natural... pero ¿será suficiente cuando el fútbol exige cerebros además de reflejos?"
+        },
+        "Chigiri":{
+            "name":"Hyoma Chigiri",
+            "position":"Delantero | Equipo Z | Número 4",
+            "rankingInicial": 292,
+            "rankingActual":8,
+            "image":"assets/imagenes/Jugadores/Hyoma_Chigiri_uniform_anime_design.webp",
+            "icon":"assets/imagenes/Jugadores/hyoma-chigiri-icon.png",
+            "stats":{
+                "Velocidad": 98,
+                "defensa": 68,
+                "pase": 80,
+                "dribble": 93,
+                "tiro": 88,
+                "ofensiva": 95
+            },
+            "skills":[
+                "Velocidad",
+                "Mentalidad de acero"
+            ],
+            "egoNote":"Un halcón con las alas rotas. Su velocidad es un regalo desperdiciado en alguien que teme su propio potencial. Si supera el miedo a caer... podría devorar el cielo."
+        },
+        "Barou":{
+            "name":"Barou Shoei",
+            "position":"Delantero | Equipo X | Número 10",
+            "rankingInicial":250,
+            "rankingActual":18,
+            "image":"assets/imagenes/Jugadores/Shoei_Baro_uniform_anime_design.webp",
+            "icon":"assets/imagenes/Jugadores/Barou_Shouei-icon.png",
+            "stats":{
+                "Velocidad": 80,
+                "defensa": 68,
+                "pase": 61,
+                "dribble": 88,
+                "tiro": 96,
+                "ofensiva": 95
+            },
+            "skills":[
+                "Dominio de área",
+                "Instinto Asesino",
+                "Presion Psicológica",
+                "Físico Bestial"
+            ],
+            "egoNote":"Un rey sin corona... pero con hambre. Su ego es puro veneno, y el fútbol su jungla personal. Podría arrasar con todo... si aprendiera que hasta los leones necesitan estrategia."
+        },
+        "Niko":{
+            "name":"Niko Ikki",
+            "position":"Delantero | Equipo Y | Número 7",
+            "rankingInicial":255,
+            "rankingActual": 14,
+            "image":"assets/imagenes/Jugadores/Ikki_Niko_uniform_anime_design.webp",
+            "icon":"assets/imagenes/Jugadores/Ikki-Niko-icon.png",
+            "stats":{
+                "Velocidad": 78,
+                "defensa": 84,
+                "pase": 88,
+                "dribble": 76,
+                "tiro": 67,
+                "ofensiva": 82
+            },
+            "skills":[
+                "Lectura del Juego",
+                "Mentalidad de sombra",
+                "Adaptación directa"
+            ],
+            "egoNote":"Un ratón que cree ser un estratega. Observa desde las sombras, pero el fútbol no se gana escondiéndose. ¿Aprenderá a clavar los dientes... o seguirá siendo solo un espectador con zapatillas?"
+        },
+        "Keisuke":{
+            "name":"Keisuke Wanima",
+            "position":"Delantero | Equipo W | Número 9",
+            "rankingInicial":233,
+            "rankingActual":"Descalificado",
+            "image":"assets/imagenes/Jugadores/Keisuke_Wanima_uniform_anime_design.webp",
+            "icon":"assets/imagenes/Jugadores/Keisuke-Wanima-icon.png",
+            "stats":{
+                "Velocidad": 0,
+                "defensa": 0,
+                "pase": 0,
+                "dribble": 0,
+                "tiro": 0,
+                "ofensiva": 0
+            },
+            "skills":[
+                "lectura de expresion"
+            ],
+            "egoNote":"Un cobarde con sonrisa de villano. Jugaba sucio porque en el fondo sabía que no tenía talento real. Patético... pero al menos fue honesto en su miseria."
+        },
+        "JunIchi":{
+            "name":"Jun-Ichi Wanima",
+            "position":"Delantero | Equipo W | Número 10",
+            "rankingInicial":232,
+            "rankingActual":30,
+            "image":"assets/imagenes/Jugadores/Junichi_Wanima_uniform_anime_design.webp",
+            "icon":"assets/imagenes/Jugadores/Junichi-Wanima-icon.png",
+            "stats":{
+                "Velocidad": 0,
+                "defensa": 0,
+                "pase": 0,
+                "dribble": 0,
+                "tiro": 0,
+                "ofensiva": 0
+            },
+            "skills":[
+                "Expresion visual"
+            ],
+            "egoNote":"Un perro faldero sin amo. ¿Podrá encontrar su propio ego... o solo sabe seguir órdenes? Por ahora, es solo la sombra de un fracaso."
+        },
+        "Zantetsu":{
+            "name":"Tsurugi Zantetsu",
+            "position":"Delantero | Equipo V | Número 10",
+            "rankingInicial":223,
+            "rankingActual":24,
+            "image":"assets/imagenes/Jugadores/Zantetsu_Tsurugi_uniform_anime_design.webp",
+            "icon":"assets/imagenes/Jugadores/Zantetsu-Tsurugi-icon.png",
+            "stats":{
+                "Velocidad": 90,
+                "defensa": 68,
+                "pase": 83,
+                "dribble": 70,
+                "tiro": 88,
+                "ofensiva": 87
+            },
+            "skills":[
+                "Aceleracion de cohete",
+                "Resistencia de titanio"
+            ],
+            "egoNote":"Velocidad sin cerebro. Corre como un rayo... pero sigue siendo un tonto útil. ¿Aprenderá a pensar, o solo servirá de carnada para los verdaderos depredadores?"
+        },
+        "Reo":{
+            "name":"Mikage Reo",
+            "position":"Delantero | Equipo V | Número 9",
+            "rankingInicial":222,
+            "rankingActual":10,
+            "image":"assets/imagenes/Jugadores/Reo_Mikage_uniform_anime_design.webp",
+            "icon":"assets/imagenes/Jugadores/Reo-Mikage-icon.png",
+            "stats":{
+                "Velocidad": 81,
+                "defensa": 86,
+                "pase": 89,
+                "dribble": 83,
+                "tiro": 82,
+                "ofensiva": 86
+            },
+            "skills":[
+                "Copia de camaleon",
+                "Copia al 99%",
+                "Iq táctico",
+                "Versatilidad diamante"
+            ],
+            "egoNore":"Un prodigio atado a su propia perfección. Tiene el talento para ser el mejor... pero le falta el hambre para ensuciarse. ¿Juega por amor al fútbol... o por miedo a fallar?"
+        },
+        "Nagi":{
+            "name":"Seishiro Nagi",
+            "position":"Delantero | Equipo V | Número 11",
+            "rankingInicial":221,
+            "rankingActual":6,
+            "image":"assets/imagenes/Jugadores/Seishiro_Nagi_uniform_anime_design.webp",
+            "icon":"assets/imagenes/Jugadores/Seishiro-Nagi-icon.png",
+            "stats":{
+                "Velocidad": 82,
+                "defensa": 75,
+                "pase": 85,
+                "dribble": 86,
+                "tiro": 92,
+                "ofensiva": 91
+            },
+            "skills":[
+                "Control absoluto del balón",
+                "Modo 'Despertar'",
+                "Disparos Antifísicos"
+            ],
+            "egoNote":"Un monstruo aburrido. Tiene el talento crudo para revolucionar el fútbol... pero ni siquiera se molesta en despertar. ¿Dónde está tu hambre, Nagi?. Necesita un Reo para creer... y un Isagi para hervirle la sangre. Patético. Pero útil."
+        }
+
+    }
+}

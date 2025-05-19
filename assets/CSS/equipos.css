@@ -1,0 +1,125 @@
+.formation-field {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 600px;
+    background: url('../imagenes/Fondo-Equipos.jpg') no-repeat center center;
+    background-size: cover;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.player-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.player {
+    width: 90px;
+    height: 90px;
+    border-radius: 60%;
+    overflow: hidden;
+    border: 2px solid #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.player img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.player-name {
+    margin-top: 5px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+    font-size: 0.9rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2px 5px;
+    border-radius: 3px;
+    white-space: nowrap;
+}
+
+/* Posiciones actualizadas para contenedores */
+.pos-gk {
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pos-df1 {
+    bottom: 150px;
+    left: 5%;
+}
+
+.pos-df2 {
+    bottom: 100px;
+    left: 27%;
+}
+
+.pos-df3 {
+    bottom: 100px;
+    right: 30%;
+}
+
+.pos-df4 {
+    bottom: 150px;
+    right: 5%;
+}
+
+.pos-mf1 {
+    bottom: 260px;
+    left: 23%;
+}
+
+.pos-mf2 {
+    bottom: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pos-mf3 {
+    bottom: 260px;
+    right: 23%;
+}
+
+.pos-at1 {
+    top: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pos-at2 {
+    top: 40px;
+    right: 13%;
+}
+
+.pos-at3 {
+    top: 40px;
+    left: 15%;
+}
+
+/* Estilo para el título del equipo */
+.team-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    color: #1a237e;
+    text-align: center;
+    margin: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Mejoras para la sección */
+.team-section {
+    padding: 40px 0;
+    background-color: #f8f9fa;
+}
