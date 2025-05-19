@@ -5,8 +5,8 @@
             "position": "Delantero | Equipo Z | Número 11",
             "rankingInicial": 299,
             "rankingActual": 15,
-            "image": "assets/imagenes/Jugadores/Yoichi_Isagi_uniform_anime_design.webp",
-            "icon": "assets/imagenes/Jugadores/Yoichi-Isagi-Icon.png",
+            "image": "./assets/imagenes/Jugadores/Yoichi_Isagi_uniform_anime_design.webp",
+            "icon": "./assets/imagenes/Jugadores/Yoichi-Isagi-Icon.png",
             "stats": {
                 "Velocidad": 77,
                 "defensa": 75,
@@ -51,8 +51,8 @@
             "position": "Delantero | Equipo Z | Número 13",
             "rankingInicial": 300,
             "rankingActual": 36,
-            "image": "assets/imagenes/Jugadores/Gurimu_Igarashi_uniform_anime_design.webp",
-            "icon": "assets/imagenes/jugadores/BL_Icon_Gurimu_Igarashi.png",
+            "image": "./assets/imagenes/Jugadores/Gurimu_Igarashi_uniform_anime_design.webp",
+            "icon": "./assets/imagenes/jugadores/BL_Icon_Gurimu_Igarashi.png",
             "stats": {
                 "Velocidad": 0,
                 "defensa": 0,
