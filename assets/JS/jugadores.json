@@ -51,8 +51,8 @@
             "position": "Delantero | Equipo Z | Número 13",
             "rankingInicial": 300,
             "rankingActual": 36,
-            "image": "./assets/imagenes/Jugadores/Gurimu_Igarashi_suit_anime_design.webp",
-            "icon": "./assets/imagenes/Jugadores/icono/BL_Icon_Gurimu_Igarashi.png",
+            "image": "./assets/imagenes/Jugadores/Gurimu_Igarashi_uniform_anime_design.webp",
+            "icon": "./assets/imagenes/Jugadores/BL_Icon_Gurimu_Igarashi.png",
             "stats": {
                 "Velocidad": 0,
                 "defensa": 0,
