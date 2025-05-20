@@ -5,8 +5,8 @@
             "position": "Delantero | Equipo Z | Número 11",
             "rankingInicial": 299,
             "rankingActual": 15,
-            "image": "./assets/imagenes/Jugadores/Yoichi_Isagi_uniform_anime_design.webp",
-            "icon": "./assets/imagenes/Jugadores/Yoichi-Isagi-Icon.png",
+            "image": "./assets/imagenes/Jugadores/Yoichi_Isagi_suit_anime_design.webp",
+            "icon": "./assets/imagenes/Jugadores/icono/Yoichi-Isagi-Icon.png",
             "stats": {
                 "Velocidad": 77,
                 "defensa": 75,
@@ -27,9 +27,9 @@
             "name": "Bachira Meguru",
             "position": "Delantero | Equipo Z | Número 9",
             "rankingInicial": 290,
-            "rankingActual": 7,
-            "image": "./assets/imagenes/Jugadores/Meguru_Bachira_uniform.webp",
-            "icon": "./assets/imagenes/Jugadores/Meguru-Bachira-Icon.png",
+            "rankingActual": 16,
+            "image": "./assets/imagenes/Jugadores/Meguru_Bachira_suit_anime_design.webp",
+            "icon": "./assets/imagenes/Jugadores/icono/Meguru-Bachira-Icon.png",
             "stats": {
                 "Velocidad": 85,
                 "defensa": 90,
@@ -51,8 +51,8 @@
             "position": "Delantero | Equipo Z | Número 13",
             "rankingInicial": 300,
             "rankingActual": 36,
-            "image": "./assets/imagenes/Jugadores/Gurimu_Igarashi_uniform_anime_design.webp",
-            "icon": "./assets/imagenes/jugadores/BL_Icon_Gurimu_Igarashi.png",
+            "image": "./assets/imagenes/Jugadores/Gurimu_Igarashi_suit_anime_design.webp",
+            "icon": "./assets/imagenes/Jugadores/icono/BL_Icon_Gurimu_Igarashi.png",
             "stats": {
                 "Velocidad": 0,
                 "defensa": 0,
@@ -73,8 +73,8 @@
             "position": "Delantero | Equipo Z | Número 9",
             "rankingInicial": 291,
             "rankingActual": "Wild Card",
-            "image": "./assets/imagenes/Jugadores/Rensuke_Kunigami_uniform_anime_design.webp",
-            "icon": "./assets/imagenes/Jugadores/BL_Icon_Rensuke_Kunigami-fotor-bg-remover-20250510144439.png",
+            "image": "./assets/imagenes/Jugadores/Rensuke_Kunigami_suit_anime_design.webp",
+            "icon": "./assets/imagenes/Jugadores/icono/BL_Icon_Rensuke_Kunigami-fotor-bg-remover-20250510144439.png",
             "stats": {
                 "Velocidad": 85,
                 "defensa": 75,
@@ -95,8 +95,8 @@
             "position": "Delantero | Equipo Z | Número 2",
             "rankingInicial": 293,
             "rankingActual": "Descalificado",
-            "image": "./assets/imagenes/Jugadores/Wataru_Kuon_uniform_anime_design.webp",
-            "icon": "./assets/imagenes/Jugadores/wataru-kuon-icon.png",
+            "image": "./assets/imagenes/Jugadores/Wataru_Kuon_suit_anime_design.webp",
+            "icon": "./assets/imagenes/Jugadores/icono/wataru-kuon-icon.png",
             "stats": {
                 "Velocidad": 0,
                 "defensa": 0,
@@ -115,8 +115,8 @@
             "position": "Delantero | Equipo Z | Número 10",
             "rankingInicial": 294,
             "rankingActual": 20,
-            "image": "./assets/imagenes/Jugadores/Jingo_Raichi_uniform_anime_design.webp",
-            "icon": "./assets/imagenes/Jugadores/BL_Icon_Jingo_Raichi.png",
+            "image": "./assets/imagenes/Jugadores/Jingo_Raichi_suit_anime_design.webp",
+            "icon": "./assets/imagenes/Jugadores/icono/BL_Icon_Jingo_Raichi.png",
             "stats": {
                 "Velocidad": 77,
                 "defensa": 90,
@@ -137,8 +137,8 @@
             "position":"Delantero | Equipo Z | Número 7",
             "rankingInicial": 295,
             "rankingActual": "Descalificado",
-            "image":"./assets/imagenes/Jugadores/Yudai_Imamura_uniform_anime_design.webp",
-            "icon":"./assets/imagenes/Jugadores/yudai-imamura-icon.png",
+            "image":"./assets/imagenes/Jugadores/Yudai_Imamura_suit_anime_design.webp",
+            "icon":"./assets/imagenes/Jugadores/icono/yudai-imamura-icon.png",
             "stats": {
                 "Velocidad": 0,
                 "defensa": 0,
@@ -155,8 +155,8 @@
             "position":"Delantero | Equipo Z | Número 1",
             "rankingInicial": 298,
             "rankingActual":"Descalificado",
-            "image":"./assets/imagenes/Jugadores/Okuhito_Iemon_uniform_anime_design.webp",
-            "icon":"./assets/imagenes/Jugadores/okuhito-Iemon-Icon.png",
+            "image":"./assets/imagenes/Jugadores/Okuhito_Iemon_suit_anime_design.webp",
+            "icon":"./assets/imagenes/Jugadores/icono/okuhito-Iemon-Icon.png",
             "stats": {
                 "Velocidad": 0,
                 "defensa": 0,
@@ -173,8 +173,8 @@
             "position": "Delantero | Equipo Z | Número 5",
             "rankingInicial": 297,
             "rankingActual": "Descalificado",
-            "image":"assets/imagenes/Jugadores/Asahi_Naruhaya_uniform_anime_design.webp",
-            "icon":"assets/imagenes/Jugadores/Asashi-Naruhaya-icon.png",
+            "image":"assets/imagenes/Jugadores/Asahi_Naruhaya_suit_anime_design.webp",
+            "icon":"assets/imagenes/Jugadores/icono/Asashi-Naruhaya-icon.png",
             "stats": {
                 "Velocidad": 0,
                 "defensa": 0,
@@ -191,8 +191,8 @@
             "position":"Delantero | Equipo Z | Número 6",
             "rankingInicial": 296,
             "rankingActual": 10,
-            "image":"assets/imagenes/Jugadores/Gin_Gagamaru_uniform_anime_design.webp",
-            "icon":"assets/imagenes/Jugadores/Gin-Gagamaru-icon.png",
+            "image":"assets/imagenes/Jugadores/Gin_Gagamaru_suit_anime_design.webp",
+            "icon":"assets/imagenes/Jugadores/icono/Gin-Gagamaru-icon.png",
             "stats":{
                 "Velocidad": 87,
                 "defensa": 93,
@@ -214,8 +214,8 @@
             "position":"Delantero | Equipo Z | Número 4",
             "rankingInicial": 292,
             "rankingActual":8,
-            "image":"assets/imagenes/Jugadores/Hyoma_Chigiri_uniform_anime_design.webp",
-            "icon":"assets/imagenes/Jugadores/hyoma-chigiri-icon.png",
+            "image":"assets/imagenes/Jugadores/Hyoma_Chigiri_suit_anime_design.webp",
+            "icon":"assets/imagenes/Jugadores/icono/hyoma-chigiri-icon.png",
             "stats":{
                 "Velocidad": 98,
                 "defensa": 68,
@@ -235,8 +235,8 @@
             "position":"Delantero | Equipo X | Número 10",
             "rankingInicial":250,
             "rankingActual":18,
-            "image":"assets/imagenes/Jugadores/Shoei_Baro_uniform_anime_design.webp",
-            "icon":"assets/imagenes/Jugadores/Barou_Shouei-icon.png",
+            "image":"assets/imagenes/Jugadores/Shoei_Baro_suit_anime_design.webp",
+            "icon":"assets/imagenes/Jugadores/icono/Barou_Shouei-icon.png",
             "stats":{
                 "Velocidad": 80,
                 "defensa": 68,
@@ -258,8 +258,8 @@
             "position":"Delantero | Equipo Y | Número 7",
             "rankingInicial":255,
             "rankingActual": 14,
-            "image":"assets/imagenes/Jugadores/Ikki_Niko_uniform_anime_design.webp",
-            "icon":"assets/imagenes/Jugadores/Ikki-Niko-icon.png",
+            "image":"assets/imagenes/Jugadores/Ikki_Niko_suit_anime_design.webp",
+            "icon":"assets/imagenes/Jugadores/icono/Ikki-Niko-icon.png",
             "stats":{
                 "Velocidad": 78,
                 "defensa": 84,
@@ -280,8 +280,8 @@
             "position":"Delantero | Equipo W | Número 9",
             "rankingInicial":233,
             "rankingActual":"Descalificado",
-            "image":"assets/imagenes/Jugadores/Keisuke_Wanima_uniform_anime_design.webp",
-            "icon":"assets/imagenes/Jugadores/Keisuke-Wanima-icon.png",
+            "image":"assets/imagenes/Jugadores/Keisuke_Wanima_suit_anime_design.webp",
+            "icon":"assets/imagenes/Jugadores/icono/Keisuke-Wanima-icon.png",
             "stats":{
                 "Velocidad": 0,
                 "defensa": 0,
@@ -300,8 +300,8 @@
             "position":"Delantero | Equipo W | Número 10",
             "rankingInicial":232,
             "rankingActual":30,
-            "image":"assets/imagenes/Jugadores/Junichi_Wanima_uniform_anime_design.webp",
-            "icon":"assets/imagenes/Jugadores/Junichi-Wanima-icon.png",
+            "image":"assets/imagenes/Jugadores/Junichi_Wanima_suit_anime_design.webp",
+            "icon":"assets/imagenes/Jugadores/icono/Junichi-Wanima-icon.png",
             "stats":{
                 "Velocidad": 0,
                 "defensa": 0,
@@ -320,8 +320,8 @@
             "position":"Delantero | Equipo V | Número 10",
             "rankingInicial":223,
             "rankingActual":24,
-            "image":"assets/imagenes/Jugadores/Zantetsu_Tsurugi_uniform_anime_design.webp",
-            "icon":"assets/imagenes/Jugadores/Zantetsu-Tsurugi-icon.png",
+            "image":"assets/imagenes/Jugadores/Zantetsu_Tsurugi_suit_anime_design.webp",
+            "icon":"assets/imagenes/Jugadores/icono/Zantetsu-Tsurugi-icon.png",
             "stats":{
                 "Velocidad": 90,
                 "defensa": 68,
@@ -340,9 +340,9 @@
             "name":"Mikage Reo",
             "position":"Delantero | Equipo V | Número 9",
             "rankingInicial":222,
-            "rankingActual":10,
-            "image":"assets/imagenes/Jugadores/Reo_Mikage_uniform_anime_design.webp",
-            "icon":"assets/imagenes/Jugadores/Reo-Mikage-icon.png",
+            "rankingActual":11,
+            "image":"assets/imagenes/Jugadores/Reo_Mikage_suit_anime_design.webp",
+            "icon":"assets/imagenes/Jugadores/icono/Reo-Mikage-icon.png",
             "stats":{
                 "Velocidad": 81,
                 "defensa": 86,
@@ -357,15 +357,15 @@
                 "Iq táctico",
                 "Versatilidad diamante"
             ],
-            "egoNore":"Un prodigio atado a su propia perfección. Tiene el talento para ser el mejor... pero le falta el hambre para ensuciarse. ¿Juega por amor al fútbol... o por miedo a fallar?"
+            "egoNote":"Un prodigio atado a su propia perfección. Tiene el talento para ser el mejor... pero le falta el hambre para ensuciarse. ¿Juega por amor al fútbol... o por miedo a fallar?"
         },
         "Nagi":{
             "name":"Seishiro Nagi",
             "position":"Delantero | Equipo V | Número 11",
             "rankingInicial":221,
-            "rankingActual":6,
-            "image":"assets/imagenes/Jugadores/Seishiro_Nagi_uniform_anime_design.webp",
-            "icon":"assets/imagenes/Jugadores/Seishiro-Nagi-icon.png",
+            "rankingActual":7,
+            "image":"assets/imagenes/Jugadores/Seishiro_Nagi_suit_anime_design.webp",
+            "icon":"assets/imagenes/Jugadores/icono/Seishiro-Nagi-icon.png",
             "stats":{
                 "Velocidad": 82,
                 "defensa": 75,
@@ -380,6 +380,50 @@
                 "Disparos Antifísicos"
             ],
             "egoNote":"Un monstruo aburrido. Tiene el talento crudo para revolucionar el fútbol... pero ni siquiera se molesta en despertar. ¿Dónde está tu hambre, Nagi?. Necesita un Reo para creer... y un Isagi para hervirle la sangre. Patético. Pero útil."
+        },
+        "Aoshi":{
+            "name":"Aoshi Tokimitsu",
+            "position":"Delantero | Número 3",
+            "rankingInicial": 3,
+            "rankingActual": 25,
+            "image":"./assets/imagenes/Jugadores/Aoshi_Tokimitsu_suit_anime_design.webp",
+            "icon":"./assets/imagenes/Jugadores/icono/Aoshi_Tokimitsu_Icon.png",
+            "stats":{
+                "Velocidad": 80,
+                "defensa": 89,
+                "pase": 70,
+                "dribble": 68,
+                "tiro": 72,
+                "ofensiva": 95
+            },
+            "skills":[
+                "Muro de titaneo",
+                "Automotivacion paranoica",
+                "Acerelacion de tren"
+            ],
+            "egoNote":"Un monstruo que no sabe ser monstruo. Tiene la fuerza para aplastar montañas... pero la mente de un niño asustado. ¿Aprenderá a rugir... o seguirá pidiendo permiso para jugar?"
+        },
+        "Jyubei":{
+            "name":"Jyubei Aryu",
+            "position":"Delantero | Número 2",
+            "rankingInicial": 2,
+            "rankingActual": 12,
+            "image":"./assets/imagenes/Jugadores/Jyubei_Aryu_suit_anime_design.webp",
+            "icon":"./assets/imagenes/Jugadores/icono/Jyubei_Aryu_Icon.png",
+            "stats":{
+                "Velocidad": 74,
+                "defensa": 90,
+                "pase": 68,
+                "dribble": 69,
+                "tiro": 79,
+                "ofensiva": 76
+            },
+            "skills":[
+                "Modo 'Glam'",
+                "Frialdad estetica",
+                "Defensa tetral"
+            ],
+            "egoNote":"Un espectáculo con piernas. Altura, elegancia... y cero sed de sangre. Podría dominar el área si dejara de actuar como un adorno y empezara a devorar."
         }
 
     }

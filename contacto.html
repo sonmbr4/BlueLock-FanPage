@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Desarrollador</title>
+
+    <!-- Preconexión para fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="assets/CSS/styleLock.css">
+    <link rel="stylesheet" href="assets/CSS/contact.css">
+</head>
+
+<body>
+    <!-- Barra de navegación principal -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index-lock.html" aria-label="Inicio">
+                <div class="logo-container">
+                    <img src="assets/imagenes/BLUE-LOCK-logoV1-header.png" alt="Blue Lock" height="50" loading="lazy">
+                    <img src="assets/imagenes/BLUE-LOCK-logoV2-header.png" alt="Blue Lock Completo" class="logo-hover"
+                        height="40" loading="lazy">
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Barra de navegación secundaria -->
+    <nav class="secondary-navbar py-2 bg-dark" aria-label="Navegación secundaria">
+        <div class="container">
+            <div class="d-flex justify-content-center flex-wrap">
+                <a href="index-lock.html" class="btn btn-outline-light mx-2 mb-2">¿Qué es Blue Lock?</a>
+                <a href="jugadores.html" class="btn btn-outline-light mx-2 mb-2">Jugadores</a>
+                <a href="equipo.html" class="btn btn-outline-light mx-2 mb-2">Equipos</a>
+                <a href="#escenarios" class="btn btn-outline-light mx-2 mb-2">Escenarios</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Hero -->
+    <section id="hero" class="bg-dark text-light p-5 text-center">
+        <div class="container">
+            <h1 class="display-4">Contacto Personal</h1>
+            <p class="lead">Desarrollador y creador de esta fan page</p>
+        </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <main class="py-5 bg-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <!-- Tarjeta de perfil -->
+                    <div class="profile-card p-4 mb-5 shadow rounded">
+                        <img src="assets/imagenes/tu-foto.jpg" alt="Tu foto de perfil"
+                            class="profile-img rounded-circle mb-4" width="200" height="200">
+                        <h2 class="mb-3">Sombra</h2>
+                        <p class="lead mb-4">Desarrollador Web </p>
+
+                        <div class="contact-info">
+                            <div class="mb-4">
+                                <a href="https://github.com/sonmbr4" target="_blank"
+                                    class="btn btn-outline-primary btn-lg mb-2">
+                                    <i class="fab fa-github me-2"></i> GitHub
+                                </a>
+                                <p class="small text-muted">Revisa mis proyectos y contribuciones</p>
+                            </div>
+
+                            <div class="mb-4">
+                                <a href="#" class="btn btn-outline-primary btn-lg mb-2">
+                                    <i class="fas fa-envelope me-2"></i> Email
+                                </a>
+                                <p class="small text-muted">Contáctame para colaboraciones o preguntas</p>
+                            </div>
+
+                            <!--<div class="social-links mt-4">
+                                 Añade más redes sociales si lo deseas 
+                                <a href="#" class="text-decoration-none mx-2" title="LinkedIn">
+                                    <i class="fab fa-linkedin fa-2x"></i>
+                                </a>
+                                <a href="#" class="text-decoration-none mx-2" title="Twitter">
+                                    <i class="fab fa-twitter fa-2x"></i>
+                                </a>
+                                <a href="#" class="text-decoration-none mx-2" title="Instagram">
+                                    <i class="fab fa-instagram fa-2x"></i>
+                                </a>
+                            </div>-->
+                        </div>
+                    </div>
+
+                    <!-- Mensaje personal -->
+                    <div class="personal-message p-4 bg-light rounded">
+                        <h3 class="mb-3">¡Hablemos!</h3>
+                        <p class="lead">Si eres fan de Blue Lock como yo, o estás interesado en mi trabajo como
+                            desarrollador, no dudes en contactarme. Siempre estoy abierto a colaboraciones interesantes
+                            y conversaciones sobre desarrollo web o anime.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-primary text-white text-center p-3">
+        <p class="mb-0">&copy; 2024 Desarrollado por [Tu Nombre]</p>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Bootstrap JS + Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+
+    <!-- Script personalizado -->
+    <script src="script.js" defer></script>
+</body>
+
+</html>
