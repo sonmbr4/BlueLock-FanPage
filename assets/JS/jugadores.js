@@ -86,7 +86,7 @@ function setupEventListeners() {
   document.querySelector(SELECTORS.searchInput).addEventListener('input', filterPlayers);
   document.querySelector(SELECTORS.filterInitialRank).addEventListener('change', filterPlayers);
   document.querySelector(SELECTORS.filterCurrentRank).addEventListener('change', filterPlayers);
-  document.querySelector(SELECTORS.sortPlayers).addEventListener('change', function() {
+  document.querySelector(SELECTORS.sortPlayers).addEventListener('change', function () {
     renderFilteredPlayers(sortPlayers(this.value));
   });
 
@@ -119,7 +119,7 @@ function filterPlayers() {
 
     // Filtro por ranking inicial
     const initialRankMatch = checkInitialRankFilter(player, initialRankFilter);
-    
+
     // Filtro por ranking actual
     const currentRankMatch = checkCurrentRankFilter(player, currentRankFilter);
 
@@ -142,7 +142,7 @@ function checkInitialRankFilter(player, filter) {
 // Comprobar filtro de ranking actual
 function checkCurrentRankFilter(player, filter) {
   if (filter === "all") return true;
-  
+
   if (typeof player.rankingActual === 'number') {
     switch (filter) {
       case "top10": return player.rankingActual <= 10;
@@ -186,14 +186,14 @@ function sortPlayers(sortBy) {
 
   switch (sortBy) {
     case "initial_rank":
-      return playerIds.sort((a, b) => 
+      return playerIds.sort((a, b) =>
         playersData.players[a].rankingInicial - playersData.players[b].rankingInicial);
 
     case "current_rank":
       return playerIds.sort((a, b) => {
-        const rankA = typeof playersData.players[a].rankingActual === 'number' ? 
+        const rankA = typeof playersData.players[a].rankingActual === 'number' ?
           playersData.players[a].rankingActual : Infinity;
-        const rankB = typeof playersData.players[b].rankingActual === 'number' ? 
+        const rankB = typeof playersData.players[b].rankingActual === 'number' ?
           playersData.players[b].rankingActual : Infinity;
         return rankA - rankB;
       });
@@ -207,7 +207,7 @@ function sortPlayers(sortBy) {
 function loadPlayer(playerId) {
   const player = playersData.players[playerId];
   playersData.currentPlayer = playerId;
-  
+
   const imageContainer = document.querySelector('.player-image-section');
   const playerImage = document.querySelector(SELECTORS.playerMainImage);
 
@@ -218,7 +218,7 @@ function loadPlayer(playerId) {
   setTimeout(() => {
     playerImage.src = player.image;
     playerImage.classList.remove(CLASSES.hidden);
-    
+
     // Forzar reflow para reiniciar la animación
     void playerImage.offsetWidth;
     imageContainer.classList.remove(CLASSES.animating);
@@ -298,7 +298,17 @@ function updatePlayerInfo(player) {
         </p>
       </div>
     </div>
+  
+    
+    <!--Uniforme-->
+    <div class="uniforms-section mt-4" id="uniformsContainer">
+  <h4 class="mb-3" style="font-family: 'Bebas Neue'; color: #0a2e52;">
+    <i class="fas fa-tshirt me-2"></i> UNIFORMES
+  </h4>
+  <div class="uniforms-grid" id="uniformsGrid"></div>
+</div>
   `;
+  updateUniforms(player);
 }
 
 // Crear elemento de estadística
@@ -355,4 +365,73 @@ function updateHexagonChart(stats) {
   });
 
   hexStats.style.clipPath = `polygon(${points.join(',')})`;
+}
+
+// Nueva función para manejar uniformes
+function updateUniforms(player) {
+  const uniformsGrid = document.getElementById('uniformsGrid');
+  uniformsGrid.innerHTML = '';
+
+  if (!player.uniforms || player.uniforms.length === 0) {
+    uniformsGrid.innerHTML = '<p class="text-muted">No hay uniformes disponibles para este jugador.</p>';
+    return;
+  }
+
+  // Añadir la imagen principal como primera opción
+  const mainImageCard = document.createElement('div');
+  mainImageCard.className = 'uniform-card active'; // 'active' para resaltar la selección actual
+  mainImageCard.innerHTML = `
+    <img src="${player.image}" alt="Imagen principal de ${player.name}">
+    <p>Vista Principal</p>
+  `;
+  mainImageCard.addEventListener('click', () => {
+    resetMainImage(player);
+  });
+  uniformsGrid.appendChild(mainImageCard);
+
+  // Añadir los uniformes alternativos
+  player.uniforms.forEach(uniform => {
+    const uniformCard = document.createElement('div');
+    uniformCard.className = 'uniform-card';
+    uniformCard.innerHTML = `
+      <img src="${uniform.image}" alt="Uniforme ${uniform.type} de ${player.name}">
+      <p>${uniform.type}</p>
+    `;
+    uniformCard.addEventListener('click', () => {
+      changePlayerImage(uniform.image, player.name);
+      // Remover clase 'active' de todas las tarjetas y añadirla a la actual
+      document.querySelectorAll('.uniform-card').forEach(card => {
+        card.classList.remove('active');
+      });
+      uniformCard.classList.add('active');
+    });
+    uniformsGrid.appendChild(uniformCard);
+  });
+}
+
+function changePlayerImage(newImageSrc, playerName) {
+  const playerImage = document.querySelector(SELECTORS.playerMainImage);
+  const imageContainer = document.querySelector('.player-image-section');
+
+  // Animación de transición
+  playerImage.classList.add(CLASSES.hidden);
+  imageContainer.classList.add(CLASSES.animating);
+
+  setTimeout(() => {
+    playerImage.src = newImageSrc;
+    playerImage.alt = `Imagen de ${playerName}`;
+    playerImage.classList.remove(CLASSES.hidden);
+
+    void playerImage.offsetWidth; // Forzar reflow
+    imageContainer.classList.remove(CLASSES.animating);
+  }, 350);
+}
+
+function resetMainImage(player) {
+  changePlayerImage(player.image, player.name);
+  // Remover clase 'active' de todas las tarjetas y añadirla a la principal
+  document.querySelectorAll('.uniform-card').forEach(card => {
+    card.classList.remove('active');
+  });
+  document.querySelectorAll('.uniform-card')[0].classList.add('active');
 }

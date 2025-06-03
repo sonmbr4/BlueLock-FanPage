@@ -21,7 +21,21 @@
                 "Tiro preciso",
                 "Instinto asesino"
             ],
-            "egoNote": "Un diamante en bruto con instinto asesino. Aún le falta egoísmo, pero su capacidad de adaptación es intrigante. Podría devorar el mundo... si supera sus dudas."
+            "egoNote": "Un diamante en bruto con instinto asesino. Aún le falta egoísmo, pero su capacidad de adaptación es intrigante. Podría devorar el mundo... si supera sus dudas.",
+            "uniforms":[
+                {
+                    "type":"Equipo z",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Isagi/Yoichi_Isagi_uniform_anime_design.webp"
+                },
+                {
+                    "type":"Equipo A - Fase 2",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Isagi/Yoichi_Isagi_S2_anime_design.webp"
+                },
+                {
+                    "type":"Blue Lock Eleven",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Isagi/Yoichi_Isagi_S2_anime_design_2.webp"
+                }
+            ]
         },
         "bachira": {
             "name": "Bachira Meguru",
@@ -44,15 +58,29 @@
                 "Regate imposible",
                 "Velocidad explosiva"
             ],
-            "egoNote": "Ese monstruo que lleva dentro es fascinante. Jugadores como él son los que harán que el fútbol japonés evolucione. Aunque a veces parece jugar solo por diversión... qué patético."
+            "egoNote": "Ese monstruo que lleva dentro es fascinante. Jugadores como él son los que harán que el fútbol japonés evolucione. Aunque a veces parece jugar solo por diversión... qué patético.",
+            "uniforms":[
+                {
+                    "type":"Equipo z",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Bachira/Meguru_Bachira_uniform.webp"
+                },
+                {
+                    "type":"Equipo A - Fase 2",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Bachira/Meguru_Bachira_S2_anime_design.webp"
+                },
+                {
+                    "type":"Blue Lock Eleven",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Bachira/Meguru_Bachira_S2_anime_design_2.webp"
+                }
+            ]
         },
         "Gurimu": {
             "name": "Gurimu Igarashi",
             "position": "Delantero | Equipo Z | Número 13",
             "rankingInicial": 300,
             "rankingActual": 36,
-            "image": "./assets/imagenes/Jugadores/Gurimu_Igarashi_uniform_anime_design.webp",
-            "icon": "./assets/imagenes/Jugadores/BL_Icon_Gurimu_Igarashi.png",
+            "image": "./assets/imagenes/Jugadores/Gurimu_Igarashi_suit_anime_design.webp",
+            "icon": "./assets/imagenes/Jugadores/icono/BL_Icon_Gurimu_Igarashi.png",
             "stats": {
                 "Velocidad": 0,
                 "defensa": 0,
@@ -66,7 +94,22 @@
                 "Tiro de suerte",
                 "Molestia defensiva"
             ],
-            "egoNote": "Un parasito con suerte. Sobrevive, pero no destaca. Si quiere quedarse, deberá aprender a devorar o será devorado"
+            "egoNote": "Un parasito con suerte. Sobrevive, pero no destaca. Si quiere quedarse, deberá aprender a devorar o será devorado",
+            "uniforms":[
+                {
+                    "type":"Equipo Z",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Gurimu/Gurimu_Igarashi_uniform_anime_design.webp"
+                },
+                {
+                    "type":"Equipo A - Fase 2",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Gurimu/Gurimu_Igarashi_S2_anime_design.webp"
+                },
+                {
+                    "type":"Blue Lock Eleven",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Gurimu/Gurimu_Igarashi_S2_anime_design_2.webp"
+                }
+
+            ]
         },
         "Rensuke": {
             "name": "Rensuke Kunigami",
@@ -88,7 +131,13 @@
                 "Mentalidad de depredador",
                 "Fisico Apocaliptico"
             ],
-            "egoNote": "Un 'héroe' quebrado. Ahora solo queda ver si el lobo salvaje dentro de él es real... o solo otro disfraz."
+            "egoNote": "Un 'héroe' quebrado. Ahora solo queda ver si el lobo salvaje dentro de él es real... o solo otro disfraz.",
+            "uniforms":[
+                {
+                    "type":"Equipo Z",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Rensuke/Rensuke_Kunigami_uniform_anime_design.webp"
+                }
+            ]
         },
         "Wataru": {
             "name": "Kuon Wataru",
@@ -108,7 +157,13 @@
             "skills": [
                 "Salto alto"
             ],
-            "egoNote": "Un traidor por instinto. Cambió su orgullo por migajas de victoria... y al final, ni eso le salvó. El fútbol no perdona a los cobardes."
+            "egoNote": "Un traidor por instinto. Cambió su orgullo por migajas de victoria... y al final, ni eso le salvó. El fútbol no perdona a los cobardes.",
+            "uniforms":[
+                {
+                    "type":"Equipo Z",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Kuon/Wataru_Kuon_uniform_anime_design.webp"
+                }
+            ]
         },
         "Jingo": {
             "name": "Jingo Raichi",
@@ -130,7 +185,22 @@
                 "Energia infnita(por su locura)",
                 "Remate de rabia"
             ],
-            "egoNote":"Un animal sin cerebro. Corre, suda y grita... pero en el fondo, solo es un perro guardián esperando órdenes. ¿Podrá convertir ese frenesí en un arma letal? O terminará como ruido de fondo del verdadero talento."
+            "egoNote":"Un animal sin cerebro. Corre, suda y grita... pero en el fondo, solo es un perro guardián esperando órdenes. ¿Podrá convertir ese frenesí en un arma letal? O terminará como ruido de fondo del verdadero talento.",
+            "uniforms":[
+                {
+                    "type":"Equipo Z",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Jingo/Jingo_Raichi_uniform_anime_design.webp"
+                },
+                {
+                    "type":"Equipo B - Fase 2",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Jingo/Jingo_Raichi_S2_anime_design.webp"
+                },
+                {
+                    "type":"Blue Lock Eleven",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Jingo/Jingo_Raichi_S2_anime_design_2.webp"
+                }
+
+            ]
         },
         "Yudai":{
             "name": "Yudai Imamura",
@@ -148,7 +218,13 @@
                 "ofensiva": 0
             },
             "skills":["Ninguna"],
-            "egoNote":"Un payaso sin circo. Creía que el fútbol era un juego de risas... hasta que Blue Lock le mostró su lugar: el olvido."
+            "egoNote":"Un payaso sin circo. Creía que el fútbol era un juego de risas... hasta que Blue Lock le mostró su lugar: el olvido.",
+            "uniforms":[
+                {
+                    "type":"Equipo Z",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Yudai/Yudai_Imamura_uniform_anime_design.webp"
+                }
+            ]
         },
         "Okuhito":{
             "name":"Okuhito Iemon",
@@ -166,7 +242,13 @@
                 "ofensiva": 0
             },
             "skills":["Porteria robusta"],
-            "egoNote":"Invisible hasta para el fracaso. Ni siquiera merece ser un ejemplo de lo que no hacer."
+            "egoNote":"Invisible hasta para el fracaso. Ni siquiera merece ser un ejemplo de lo que no hacer.",
+            "uniforms":[
+                {
+                    "type":"Equipo Z",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Okuhito/Okuhito_Iemon_uniform_anime_design.webp"
+                }
+            ]
         },
         "Naruhaya":{
             "name":"Naruhaya Asahi",
@@ -184,7 +266,13 @@
                 "ofensiva": 0
             },
             "skills":["Juego sin balón"],
-            "egoNote":"Un jugador que confundió esfuerzo con derecho. Corría en círculos, creyendo que la pasión era suficiente... hasta que el mundo le escupió la verdad: el fútbol solo recompensa a los hambrientos, no a los que solo jadean."
+            "egoNote":"Un jugador que confundió esfuerzo con derecho. Corría en círculos, creyendo que la pasión era suficiente... hasta que el mundo le escupió la verdad: el fútbol solo recompensa a los hambrientos, no a los que solo jadean.",
+            "uniforms":[
+                {
+                    "type":"Equipo Z",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Naruhaya/Asahi_Naruhaya_uniform_anime_design.webp"
+                }
+            ]
         },
         "Gagamaru":{
             "name":"Gin Gagamaru",
@@ -207,13 +295,27 @@
                 "Mentalidad fria",
                 "Tecnica de Kempo"
             ],
-            "egoNote":"Un bruto con instinto. No piensa, actúa. Su cuerpo es un arma natural... pero ¿será suficiente cuando el fútbol exige cerebros además de reflejos?"
+            "egoNote":"Un bruto con instinto. No piensa, actúa. Su cuerpo es un arma natural... pero ¿será suficiente cuando el fútbol exige cerebros además de reflejos?",
+            "uniforms":[
+                {
+                    "type":"Equipo Z",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Gagamaru/Gin_Gagamaru_uniform_anime_design.webp"
+                },
+                {
+                    "type":"Equipo C - Fase 2",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Gagamaru/Gin_Gagamaru_S2_anime_design.webp"
+                },
+                {
+                    "type":"Blue Lock Eleven",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Gagamaru/Gin_Gagamaru_S2_anime_design_2.webp"
+                }
+            ]
         },
         "Chigiri":{
             "name":"Hyoma Chigiri",
             "position":"Delantero | Equipo Z | Número 4",
             "rankingInicial": 292,
-            "rankingActual":8,
+            "rankingActual":44,
             "image":"assets/imagenes/Jugadores/Hyoma_Chigiri_suit_anime_design.webp",
             "icon":"assets/imagenes/Jugadores/icono/hyoma-chigiri-icon.png",
             "stats":{
@@ -228,7 +330,21 @@
                 "Velocidad",
                 "Mentalidad de acero"
             ],
-            "egoNote":"Un halcón con las alas rotas. Su velocidad es un regalo desperdiciado en alguien que teme su propio potencial. Si supera el miedo a caer... podría devorar el cielo."
+            "egoNote":"Un halcón con las alas rotas. Su velocidad es un regalo desperdiciado en alguien que teme su propio potencial. Si supera el miedo a caer... podría devorar el cielo.",
+            "uniforms":[
+                {
+                    "type":"Equipo Z",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Chigiri/Hyoma_Chigiri_uniform_anime_design.webp"
+                },
+                {
+                    "type":"Equipo B - Fase 2",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Chigiri/Hyoma_Chigiri_S2_anime_design.webp"
+                },
+                {
+                    "type":"Blue Lock Eleven",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Chigiri/Hyoma_Chigiri_S2_anime_design_2.webp"
+                }
+            ]
         },
         "Barou":{
             "name":"Barou Shoei",
@@ -251,7 +367,21 @@
                 "Presion Psicológica",
                 "Físico Bestial"
             ],
-            "egoNote":"Un rey sin corona... pero con hambre. Su ego es puro veneno, y el fútbol su jungla personal. Podría arrasar con todo... si aprendiera que hasta los leones necesitan estrategia."
+            "egoNote":"Un rey sin corona... pero con hambre. Su ego es puro veneno, y el fútbol su jungla personal. Podría arrasar con todo... si aprendiera que hasta los leones necesitan estrategia.",
+            "uniforms":[
+                {
+                    "type":"Equipo X",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Barou/Shoei_Baro_uniform_anime_design.webp"
+                },
+                {
+                    "type":"Equipo B - Fase 2",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Barou/Shoei_Baro_S2_anime_design.webp"
+                },
+                {
+                    "type":"Blue Lock Eleven",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Barou/Shoei_Baro_S2_anime_design_2.webp"
+                }
+            ]
         },
         "Niko":{
             "name":"Niko Ikki",
@@ -273,7 +403,21 @@
                 "Mentalidad de sombra",
                 "Adaptación directa"
             ],
-            "egoNote":"Un ratón que cree ser un estratega. Observa desde las sombras, pero el fútbol no se gana escondiéndose. ¿Aprenderá a clavar los dientes... o seguirá siendo solo un espectador con zapatillas?"
+            "egoNote":"Un ratón que cree ser un estratega. Observa desde las sombras, pero el fútbol no se gana escondiéndose. ¿Aprenderá a clavar los dientes... o seguirá siendo solo un espectador con zapatillas?",
+            "uniforms":[
+                {
+                    "type":"Equipo Y",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Niko/Ikki_Niko_uniform_anime_design.webp"
+                },
+                {
+                    "type":"Equipo B - Fase 2",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Niko/Ikki_Niko_S2_anime_design.webp"
+                },
+                {
+                    "type":"Blue Lock Eleven",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Niko/Ikki_Niko_S2_anime_design_2.webp"
+                }
+            ]
         },
         "Keisuke":{
             "name":"Keisuke Wanima",
@@ -293,7 +437,13 @@
             "skills":[
                 "lectura de expresion"
             ],
-            "egoNote":"Un cobarde con sonrisa de villano. Jugaba sucio porque en el fondo sabía que no tenía talento real. Patético... pero al menos fue honesto en su miseria."
+            "egoNote":"Un cobarde con sonrisa de villano. Jugaba sucio porque en el fondo sabía que no tenía talento real. Patético... pero al menos fue honesto en su miseria.",
+            "uniforms":[
+                {
+                    "type":"Equipo W",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Keisuke/Keisuke_Wanima_uniform_anime_design.webp"
+                }
+            ]
         },
         "JunIchi":{
             "name":"Jun-Ichi Wanima",
@@ -301,7 +451,7 @@
             "rankingInicial":232,
             "rankingActual":30,
             "image":"assets/imagenes/Jugadores/Junichi_Wanima_suit_anime_design.webp",
-            "icon":"assets/imagenes/Jugadores/icono/Junichi-Wanima-icon.png",
+            "icon":"./assets/imagenes/Jugadores/icono/Junichi-wanima-icon.png",
             "stats":{
                 "Velocidad": 0,
                 "defensa": 0,
@@ -313,13 +463,23 @@
             "skills":[
                 "Expresion visual"
             ],
-            "egoNote":"Un perro faldero sin amo. ¿Podrá encontrar su propio ego... o solo sabe seguir órdenes? Por ahora, es solo la sombra de un fracaso."
+            "egoNote":"Un perro faldero sin amo. ¿Podrá encontrar su propio ego... o solo sabe seguir órdenes? Por ahora, es solo la sombra de un fracaso.",
+            "uniforms":[
+                {
+                    "type": "Equipo W",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Junichi/Junichi_Wanima_uniform_anime_design.webp"
+                },
+                {
+                    "type":"Equipo C - Fase 2",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Junichi/Junichi_Wanima_S2_anime_design.webp"
+                }
+            ]
         },
         "Zantetsu":{
             "name":"Tsurugi Zantetsu",
             "position":"Delantero | Equipo V | Número 10",
             "rankingInicial":223,
-            "rankingActual":24,
+            "rankingActual":53,
             "image":"assets/imagenes/Jugadores/Zantetsu_Tsurugi_suit_anime_design.webp",
             "icon":"assets/imagenes/Jugadores/icono/Zantetsu-Tsurugi-icon.png",
             "stats":{
@@ -334,7 +494,21 @@
                 "Aceleracion de cohete",
                 "Resistencia de titanio"
             ],
-            "egoNote":"Velocidad sin cerebro. Corre como un rayo... pero sigue siendo un tonto útil. ¿Aprenderá a pensar, o solo servirá de carnada para los verdaderos depredadores?"
+            "egoNote":"Velocidad sin cerebro. Corre como un rayo... pero sigue siendo un tonto útil. ¿Aprenderá a pensar, o solo servirá de carnada para los verdaderos depredadores?",
+            "uniforms":[
+                {
+                    "type":"Equipo V",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Zantetsu/Zantetsu_Tsurugi_uniform_anime_design.webp"
+                },
+                {
+                    "type":"Equipo C - Fase 2",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Zantetsu/Zantetsu_Tsurugi_S2_anime_design.png"
+                },
+                {
+                    "type":"Blue Lock Eleven",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Zantetsu/Zantetsu_Tsurugi_BlueLock_Eleven.png"
+                }
+            ]
         },
         "Reo":{
             "name":"Mikage Reo",
@@ -342,7 +516,7 @@
             "rankingInicial":222,
             "rankingActual":11,
             "image":"assets/imagenes/Jugadores/Reo_Mikage_suit_anime_design.webp",
-            "icon":"assets/imagenes/Jugadores/icono/Reo-Mikage-icon.png",
+            "icon":"assets/imagenes/Jugadores/icono/Reo-Mikage-Icon.png",
             "stats":{
                 "Velocidad": 81,
                 "defensa": 86,
@@ -357,15 +531,29 @@
                 "Iq táctico",
                 "Versatilidad diamante"
             ],
-            "egoNote":"Un prodigio atado a su propia perfección. Tiene el talento para ser el mejor... pero le falta el hambre para ensuciarse. ¿Juega por amor al fútbol... o por miedo a fallar?"
+            "egoNote":"Un prodigio atado a su propia perfección. Tiene el talento para ser el mejor... pero le falta el hambre para ensuciarse. ¿Juega por amor al fútbol... o por miedo a fallar?",
+            "uniforms":[
+                {
+                    "type":"Equipo V",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Reo/Reo_Mikage_uniform_anime_design.webp"
+                },
+                {
+                    "type":"Equipo C - Fase 2",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Reo/Reo_Mikage_uniform_teamC.png"
+                },
+                {
+                    "type":"Blue Lock Eleven",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Reo/Reo_Mikage_BlueLock_Eleven.png"
+                }
+            ]
         },
         "Nagi":{
-            "name":"Seishiro Nagi",
+            "name":"Nagi Seishiro",
             "position":"Delantero | Equipo V | Número 11",
             "rankingInicial":221,
             "rankingActual":7,
             "image":"assets/imagenes/Jugadores/Seishiro_Nagi_suit_anime_design.webp",
-            "icon":"assets/imagenes/Jugadores/icono/Seishiro-Nagi-icon.png",
+            "icon":"assets/imagenes/Jugadores/icono/Seishiro-Nagi-Icon.png",
             "stats":{
                 "Velocidad": 82,
                 "defensa": 75,
@@ -379,7 +567,25 @@
                 "Modo 'Despertar'",
                 "Disparos Antifísicos"
             ],
-            "egoNote":"Un monstruo aburrido. Tiene el talento crudo para revolucionar el fútbol... pero ni siquiera se molesta en despertar. ¿Dónde está tu hambre, Nagi?. Necesita un Reo para creer... y un Isagi para hervirle la sangre. Patético. Pero útil."
+            "egoNote":"Un monstruo aburrido. Tiene el talento crudo para revolucionar el fútbol... pero ni siquiera se molesta en despertar. ¿Dónde está tu hambre, Nagi?. Necesita un Reo para creer... y un Isagi para hervirle la sangre. Patético. Pero útil.",
+            "uniforms":[
+                {
+                    "type":"Uniforme Escolar",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Nagi/Nagi_Seishiro_uniform_school.png"
+                },
+                {
+                    "type":"Equipo V",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Nagi/Seishiro_Nagi_uniform_anime_design.webp"
+                },
+                {
+                    "type":"Equipo C - Fase 2",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Nagi/Nagi_Seishiro_uniform_teamC.png"
+                },
+                {
+                    "type":"Blue Lock Eleven",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Nagi/Nagi_Seishiro_uniform_BlueLock_Eleven.png"
+                }
+            ]
         },
         "Aoshi":{
             "name":"Aoshi Tokimitsu",
@@ -401,7 +607,17 @@
                 "Automotivacion paranoica",
                 "Acerelacion de tren"
             ],
-            "egoNote":"Un monstruo que no sabe ser monstruo. Tiene la fuerza para aplastar montañas... pero la mente de un niño asustado. ¿Aprenderá a rugir... o seguirá pidiendo permiso para jugar?"
+            "egoNote":"Un monstruo que no sabe ser monstruo. Tiene la fuerza para aplastar montañas... pero la mente de un niño asustado. ¿Aprenderá a rugir... o seguirá pidiendo permiso para jugar?",
+            "uniforms":[
+                {
+                    "type":"Equipo A - Fase 2",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Aoshi/Aoshi_Tokimitsu_uniform_teamA.png"
+                },
+                {
+                    "type":"Blue Lock Eleven",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Aoshi/Aoshi_Tokimitsu_uniform_BlueLock_Eleven.png"
+                }
+            ]
         },
         "Jyubei":{
             "name":"Jyubei Aryu",
@@ -423,7 +639,160 @@
                 "Frialdad estetica",
                 "Defensa tetral"
             ],
-            "egoNote":"Un espectáculo con piernas. Altura, elegancia... y cero sed de sangre. Podría dominar el área si dejara de actuar como un adorno y empezara a devorar."
+            "egoNote":"Un espectáculo con piernas. Altura, elegancia... y cero sed de sangre. Podría dominar el área si dejara de actuar como un adorno y empezara a devorar.",
+            "uniforms":[
+                {
+                    "type":"Equipo A - Fase 2",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Jyubei/Jyubei_Aryu_uniform_teamA.png"
+                },
+                {
+                    "type":"Blue Lock Eleven",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Jyubei/Jyubei_Aryu_uniform_BlueLock_Eleven.png"
+                }
+            ]
+        },
+        "Rin":{
+            "name":"itoshi Rin",
+            "position":"Delantero | Número 1",
+            "rankingInicial": 1,
+            "rankingActual": 1,
+            "image":"./assets/imagenes/Jugadores/Rin_Itoshi_suit_anime_design.webp",
+            "icon":"./assets/imagenes/Jugadores/icono/Rin_Itoshi_Icon.png",
+            "stats":{
+                "Velocidad": 87,
+                "defensa": 65,
+                "pase": 88,
+                "dribble": 92,
+                "tiro": 97,
+                "ofensiva": 95
+            },
+            "skills":[
+                "Frialdad Absoluta",
+                "Adaptacion Venenoza"
+            ],
+            "egoNote":"Un demonio tallado a propósito. Frío, calculador y letal... pero ¿es su ambición realmente suya? Corre tras la sombra de su hermano como un perro de ataque... ¿o algún día morderá incluso a Sae?",
+            "uniforms":[
+                {
+                    "type":"Equipo A - Fase 2",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Rin/Rin_Itoshi_uniform_teamA.png"
+                },
+                {
+                    "type":"Blue Lock Eleven",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Rin/Rin_Itoshi_uniform_BlueLock_Eleven.png"
+                }
+            ]
+        },
+        "Otoya":{
+            "name":"Otoya Eita",
+            "position":"Delantero Número 33",
+            "rankingInicial": 33,
+            "rankingActual":"desconocido",
+            "image":"./assets/imagenes/Jugadores/Eita_Otoya_S2_anime_design.webp",
+            "icon":"./assets/imagenes/Jugadores/icono/Eita_Otoya_Icon.png",
+            "stats":{
+                "Velocidad": 94,
+                "defensa": 60,
+                "pase": 78,
+                "dribble": 93,
+                "tiro": 90,
+                "ofensiva": 91
+            },
+            "skills":[
+                "Velocidad Fantasmal",
+                "Regate de sombra",
+                "Definición de ninja"
+            ],
+            "egoNote":"Un depredador que confunde velocidad con muerte. Es rápido, sí... pero un cuchillo sin filo solo brilla sin cortar. ¿Aprenderá a rematar como un asesino... o seguirá siendo un ladrón de atención sin peso real?",
+            "uniforms":[
+                {
+                    "type":"Blue Lock Eleven",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Otoya/Eita-Otoya-Bluelock-Eleven.png"
+                }
+            ]
+        },
+        "Yukimiya":{
+            "name":"Kenyu Yukimiya",
+            "position":"Delantero Número 23",
+            "rankingInicial":23,
+            "rankingActual":"desconocido",
+            "image":"./assets/imagenes/Jugadores/Kenyu_Yukimiya_S2_anime_design.webp",
+            "icon":"./assets/imagenes/Jugadores/icono/Kenyu_Yukimiya_Icon.png",
+            "stats":{
+                "Velocidad": 89,
+                "defensa": 76,
+                "pase": 77,
+                "dribble": 91,
+                "tiro": 86,
+                "ofensiva": 88
+            },
+            "skills":[
+                "Regate callejero",
+                "Tiro con efecto"
+            ],
+            "egoNote":"Un artista atrapado en su propia tragedia. Sus regates son poesía... pero el fútbol no es un museo. ¿Morirá como un genio incomprendido... o aprenderá que hasta la belleza necesita sangre?",
+            "uniforms":[
+                {
+                    "type":"Blue Lock Eleven",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Yukimiya/Kenyu-Yukimiya-BlueLock-Eleven.png"
+                }
+            ]
+        },
+        "Karasu":{
+            "name":"Tabito Karazu",
+            "position":"Delantero Número 69",
+            "rankingInicial": 69,
+            "rankingActual":"desconocido",
+            "image":"./assets/imagenes/Jugadores/Tabito_Karasu_S2_anime_design.webp",
+            "icon":"./assets/imagenes/Jugadores/icono/Tabito_Karasu_Icon.png",
+            "stats":{
+                "Velocidad": 82,
+                "defensa": 88,
+                "pase": 93,
+                "dribble": 85,
+                "tiro": 78,
+                "ofensiva": 90
+            },
+            "skills":[
+                "Lectura de jugador",
+                "Vision y distribuición",
+                "Mentalidad Despiadada"
+            ],
+            "egoNote":"Un depredador que juega al ajedrez mientras los demás pelean a dentelladas. Su mente es un veneno lento... pero en Blue Lock, lo rápido se lo lleva todo. ¿Aprenderá a matar en vez de solo estrangular?",
+            "uniforms":[
+                {
+                    "type":"Blue Lock Eleven",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Karasu/Tabito-Karazu-BlueLock-Eleven.png"
+                }
+            ]
+        },
+        "Nanase":{
+            "name":"Nanase Nijiro",
+            "position":"Delantero Número 99",
+            "rankingInicial":99,
+            "rankingActual":"desconocido",
+            "image":"./assets/imagenes/Jugadores/Nanase-Nijiro-S2-Uniform.png",
+            "icon":"./assets/imagenes/Jugadores/icono/Nijiro_Nanase_Icon.png",
+            "stats":{
+                "Velocidad": 84,
+                "defensa": 65,
+                "pase": 80,
+                "dribble": 86,
+                "tiro": 82,
+                "ofensiva": 83
+            },
+            "skills":[
+                "Versatilidad Pura",
+                "Mnetalidad Resiliente",
+                "Dribling Fluido"
+            ],
+            "egoNote":"Un niño bueno en un juego de lobos. Sonríe, coopera... y por eso mismo sobra. Blue Lock no es un lugar para compartir... ¿O acaso crees que el fútbol premia a los amables?",
+            "uniforms":[
+                {
+                    "type":"Blue Lock Eleven",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Nanase/Nijiro-Nanase-BlueLock-Eleven.png"
+                }
+            ]
+
         }
 
     }

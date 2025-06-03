@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Lock Fan Page - Jugadores</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/CSS/styleLock.css">
+    <link rel="stylesheet" href="assets/CSS/jugadores.css">
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <!-- Navbar con Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="index-lock.html">
+                <div class="logo-container">
+                    <img src="assets/imagenes/BLUE-LOCK-logoV1-header.png" alt="Blue Lock" height="50">
+                    <img src="assets/imagenes/BLUE-LOCK-logoV2-header.png" alt="Blue Lock Completo" class="logo-hover"
+                        height="40">
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Barra de navegación secundaria (botones) -->
+    <div class="secondary-navbar py-2 bg-dark">
+        <div class="container">
+            <div class="d-flex justify-content-center flex-wrap">
+                <a href="index-lock.html" class="btn btn-outline-light mx-2 mb-2">¿Qué es Blue Lock?</a>
+                <a href="jugadores.html" class="btn btn-outline-light mx-2 mb-2">Jugadores</a>
+                <a href="equipo.html" class="btn btn-outline-light mx-2 mb-2">Equipos</a>
+                <a href="#escenarios" class="btn btn-outline-light mx-2 mb-2">Escenarios</a>
+                <a href="#contacto" class="btn btn-outline-light mx-2 mb-2">Apuestas</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Contenido-->
+    <main>
+        <section>
+            <div class="full-width-container">
+
+                <div class="player-list-section">
+                    <!-- Botón para mostrar/ocultar filtros -->
+                    <button id="toggleFiltersBtn" class="btn btn-primary w-100 mb-2">
+                        <i class="fas fa-filter me-2"></i> Mostrar Filtros
+                    </button>
+
+
+
+                    <!-- Contenedor de filtros (oculto inicialmente) -->
+                    <div id="filtersContainer" class="player-search-container p-3 bg-dark" style="display: none;">
+
+
+                        <input type="text" id="searchInput" class="form-control mb-2" placeholder="Buscar jugador..." />
+                        <!--Selector de ordenamiento-->
+                        <div class="sort-options-container p-3 bg-dark">
+                            <select id="sortPlayers" class="form-select mb-2">
+                                <option value="default">Ordenar por: Predeterminado</option>
+                                <option value="initial_rank">Ranking inicial (↑)</option>
+                                <option value="current_rank">Ranking actual (↑)</option>
+                            </select>
+                        </div>
+
+                        <select id="filterInitialRank" class="form-select mb-2">
+                            <option value="all">Ranking inicial: Todos</option>
+                            <option value="top100">Top 100</option>
+                            <option value="200-300">200-300</option>
+                            <option value="descalificado">Descalificados</option>
+                        </select>
+
+                        <select id="filterCurrentRank" class="form-select mb-2">
+                            <option value="all">Ranking actual: Todos</option>
+                            <option value="top10">Top 10</option>
+                            <option value="top50">Top 50</option>
+                            <option value="descalificado">Descalificados</option>
+                            <option value="whiteCard">White Card</option>
+                        </select>
+                    </div>
+
+                    <!-- Lista de jugadores -->
+                    <div id="playerList"></div>
+                </div>
+
+                <!--Imagenes-->
+                <div class="player-image-section">
+                    <img id="playerMainImage" src="./assets/imagenes/jinpachi-ego-2.png" alt="Jugador"
+                        class="player-image">
+                </div>
+
+
+                <!--Infomacion-->
+
+                <div class="player-info-section" id="playerInfo">
+
+                </div>
+
+
+            </div>
+        </section>
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center p-3">
+        <p class="mb-0">&copy; 2024 Blue Lock Fan Page</p>
+    </footer>
+
+    <!-- Bootstrap JS + Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Tu JS personalizado -->
+    <script src="script.js"></script>
+    <script src="assets/JS/jugadores.js"></script>
+    <script>
+        function updatePlayerInfo(player) {
+            document.querySelector(SELECTORS.playerInfo).innerHTML = `
+    <h1 class="main-title">${player.name}</h1>
+    <p class="lead text-muted mb-4">${player.position}</p>
+
+    <div class="stat-card mt-4">
+      <h4 class="mb-3">Ranking Inicial:</h4>
+      <div class="d-flex flex-wrap">
+        <h1 class="main-title">${player.rankingInicial}</h1>
+      </div>
+
+      <h4 class="mb-3">Ranking Actual:</h4>
+      <div class="d-flex flex-wrap">
+        <h1 class="main-title">${player.rankingActual}</h1>
+      </div>
+    </div>
+
+    <!-- Gráfico hexagonal -->
+    <div class="hexagon-container">
+      <div class="hexagon-grid"></div>
+      <div class="hexagon-stats" id="hexStats"></div>
+      <div class="stat-labels">
+        <div class="stat-label label-speed">VELOCIDAD</div>
+        <div class="stat-label label-stamina">OFENSIVA</div>
+        <div class="stat-label label-offense">DEFENSA</div>
+        <div class="stat-label label-pass">TIRO</div>
+        <div class="stat-label label-defense">PASE</div>
+        <div class="stat-label label-shoot">DRIBBLE</div>
+      </div>
+    </div>
+    
+    <!-- Estadísticas detalladas -->
+    <div class="row">
+      <div class="col-md-6">
+        ${createStatItem('VELOCIDAD', player.stats.Velocidad)}
+        ${createStatItem('OFENSIVA', player.stats.ofensiva)}
+        ${createStatItem('DEFENSIVA', player.stats.defensa)}
+      </div>
+      <div class="col-md-6">
+        ${createStatItem('TIRO', player.stats.tiro)}
+        ${createStatItem('PASE', player.stats.pase)}
+        ${createStatItem('DRIBBLE', player.stats.dribble)}
+      </div>
+    </div>
+    
+    <!-- Habilidades -->
+    <div class="stat-card mt-4">
+      <h4 class="mb-3" style="font-family: 'Bebas Neue', sans-serif; color: #0a2e52;">
+        <i class="fas fa-futbol me-2"></i> HABILIDADES ESPECIALES
+      </h4>
+      <div class="skills-container">
+        ${player.skills.map(skill => `
+          <div class="skill-item">
+            <span class="skill-name">${skill}</span>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+    
+    <!-- Nota de Ego -->
+    <div class="stat-card mt-3">
+      <div class="ego-note">
+        <h4 class="mb-3" style="color: #0a2e52;">NOTA DE JINPACHI EGO</h4>
+        <p class="mb-3 fst-italic" style="font-size: 0.95rem;">
+          "${player.egoNote || 'Este jugador aún no ha demostrado si merece ser el egoísta definitivo.'}"
+        </p>
+      </div>
+    </div>
+
+
+    <div class="uniforms-section mt-4" id="uniformsContainer">
+  <h4 class="mb-3" style="font-family: 'Bebas Neue'; color: #0a2e52;">
+    <i class="fas fa-tshirt me-2"></i> UNIFORMES
+  </h4>
+  <div class="uniforms-grid" id="uniformsGrid"></div>
+</div>
+  `;
+            updateUniforms(player);
+        }
+
+
+        // Nueva función para manejar uniformes
+        function updateUniforms(player) {
+            const uniformsGrid = document.getElementById('uniformsGrid');
+            uniformsGrid.innerHTML = '';
+
+            if (!player.uniforms || player.uniforms.length === 0) {
+                uniformsGrid.innerHTML = '<p class="text-muted">No hay uniformes disponibles para este jugador.</p>';
+                return;
+            }
+
+            // Añadir la imagen principal como primera opción
+            const mainImageCard = document.createElement('div');
+            mainImageCard.className = 'uniform-card active'; // 'active' para resaltar la selección actual
+            mainImageCard.innerHTML = `
+    <img src="${player.image}" alt="Imagen principal de ${player.name}">
+    <p>Vista Principal</p>
+  `;
+            mainImageCard.addEventListener('click', () => {
+                resetMainImage(player);
+            });
+            uniformsGrid.appendChild(mainImageCard);
+
+            // Añadir los uniformes alternativos
+            player.uniforms.forEach(uniform => {
+                const uniformCard = document.createElement('div');
+                uniformCard.className = 'uniform-card';
+                uniformCard.innerHTML = `
+      <img src="${uniform.image}" alt="Uniforme ${uniform.type} de ${player.name}">
+      <p>${uniform.type}</p>
+    `;
+                uniformCard.addEventListener('click', () => {
+                    changePlayerImage(uniform.image, player.name);
+                    // Remover clase 'active' de todas las tarjetas y añadirla a la actual
+                    document.querySelectorAll('.uniform-card').forEach(card => {
+                        card.classList.remove('active');
+                    });
+                    uniformCard.classList.add('active');
+                });
+                uniformsGrid.appendChild(uniformCard);
+            });
+        }
+
+        function changePlayerImage(newImageSrc, playerName) {
+            const playerImage = document.querySelector(SELECTORS.playerMainImage);
+            const imageContainer = document.querySelector('.player-image-section');
+
+            // Animación de transición
+            playerImage.classList.add(CLASSES.hidden);
+            imageContainer.classList.add(CLASSES.animating);
+
+            setTimeout(() => {
+                playerImage.src = newImageSrc;
+                playerImage.alt = `Imagen de ${playerName}`;
+                playerImage.classList.remove(CLASSES.hidden);
+
+                void playerImage.offsetWidth; // Forzar reflow
+                imageContainer.classList.remove(CLASSES.animating);
+            }, 350);
+        }
+
+        function resetMainImage(player) {
+            changePlayerImage(player.image, player.name);
+            // Remover clase 'active' de todas las tarjetas y añadirla a la principal
+            document.querySelectorAll('.uniform-card').forEach(card => {
+                card.classList.remove('active');
+            });
+            document.querySelectorAll('.uniform-card')[0].classList.add('active');
+        }
+
+
+
+    </script>
+</body>
+
+</html>
