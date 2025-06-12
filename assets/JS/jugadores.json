@@ -78,7 +78,7 @@
             "name": "Gurimu Igarashi",
             "position": "Delantero | Equipo Z | Número 13",
             "rankingInicial": 300,
-            "rankingActual": 36,
+            "rankingActual": 108,
             "image": "./assets/imagenes/Jugadores/Gurimu_Igarashi_suit_anime_design.webp",
             "icon": "./assets/imagenes/Jugadores/icono/BL_Icon_Gurimu_Igarashi.png",
             "stats": {
@@ -166,10 +166,10 @@
             ]
         },
         "Jingo": {
-            "name": "Jingo Raichi",
+            "name": "Raichi Jingo",
             "position": "Delantero | Equipo Z | Número 10",
             "rankingInicial": 294,
-            "rankingActual": 20,
+            "rankingActual": 95,
             "image": "./assets/imagenes/Jugadores/Jingo_Raichi_suit_anime_design.webp",
             "icon": "./assets/imagenes/Jugadores/icono/BL_Icon_Jingo_Raichi.png",
             "stats": {
@@ -275,10 +275,10 @@
             ]
         },
         "Gagamaru":{
-            "name":"Gin Gagamaru",
+            "name":"Gagamaru Gin",
             "position":"Delantero | Equipo Z | Número 6",
             "rankingInicial": 296,
-            "rankingActual": 10,
+            "rankingActual": 88,
             "image":"assets/imagenes/Jugadores/Gin_Gagamaru_suit_anime_design.webp",
             "icon":"assets/imagenes/Jugadores/icono/Gin-Gagamaru-icon.png",
             "stats":{
@@ -387,7 +387,7 @@
             "name":"Niko Ikki",
             "position":"Delantero | Equipo Y | Número 7",
             "rankingInicial":255,
-            "rankingActual": 14,
+            "rankingActual": 63,
             "image":"assets/imagenes/Jugadores/Ikki_Niko_suit_anime_design.webp",
             "icon":"assets/imagenes/Jugadores/icono/Ikki-Niko-icon.png",
             "stats":{
@@ -449,7 +449,7 @@
             "name":"Jun-Ichi Wanima",
             "position":"Delantero | Equipo W | Número 10",
             "rankingInicial":232,
-            "rankingActual":30,
+            "rankingActual":79,
             "image":"assets/imagenes/Jugadores/Junichi_Wanima_suit_anime_design.webp",
             "icon":"./assets/imagenes/Jugadores/icono/Junichi-wanima-icon.png",
             "stats":{
@@ -652,7 +652,7 @@
             ]
         },
         "Rin":{
-            "name":"itoshi Rin",
+            "name":"Itoshi Rin",
             "position":"Delantero | Número 1",
             "rankingInicial": 1,
             "rankingActual": 1,
@@ -792,7 +792,34 @@
                     "image":"./assets/imagenes/Jugadores/Uniforme/Nanase/Nijiro-Nanase-BlueLock-Eleven.png"
                 }
             ]
-
+        },
+        "Hiori":{
+            "name":"Hiori Yo",
+            "position":"Delantero Número 27",
+            "rankingInicial":27,
+            "rankingActual":"desconocido",
+            "image":"./assets/imagenes/Jugadores/Hiori-Yo-S2-Uniform.png",
+            "icon":"./assets/imagenes/Jugadores/icono/Hiori_Yo_Icon.png",
+            "stats":{
+                "Velocidad": 87,
+                "defensa": 70,
+                "pase": 95,
+                "dribble": 92,
+                "tiro": 88,
+                "ofensiva": 93
+            },
+            "skills":[
+                "Técnica Primer Toque",
+                "Ritmo Hipnótico",
+                "Frialdad Clínica"
+            ],
+            "egoNote":"Un genio programado para obedecer. Sus pases son obras de arte... pero ¿dónde está el artista? Podría ser el mejor mediocampista del mundo... si alguna vez despertara de su sueño de ser útil.",
+            "uniforms":[
+                {
+                    "type":"Blue Lock Eleven",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Hiori/Hiori-Yo-BlueLock-Eleven.png"
+                }
+            ]
         }
 
     }

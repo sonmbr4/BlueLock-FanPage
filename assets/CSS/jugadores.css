@@ -1,5 +1,6 @@
-/* Variables de color y tipografía */
+/* ============ VARIABLES Y CONFIGURACIÓN ============ */
 :root {
+  /* Colores */
   --primary-color: #0a2e52;
   --secondary-color: #134184;
   --text-color: #333;
@@ -8,35 +9,67 @@
   --white: #ffffff;
   --gray-light: #e9ecef;
   --gray-medium: #d1d7dc;
+  
+  /* Tipografía */
   --font-primary: 'Bebas Neue', sans-serif;
-  --font-secondary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-secondary: 'Segoe UI', system-ui, sans-serif;
+  
+  /* Transiciones */
+  --transition-fast: 0.2s;
+  --transition-medium: 0.3s;
+  --transition-slow: 0.5s;
+  
+  /* Sombras */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  
+  /* Bordes */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
 }
 
-/* Estilos base */
+/* ============ ESTILOS BASE ============ */
 body {
   font-family: var(--font-secondary);
   margin: 0;
   padding: 0;
   background-color: var(--light-bg);
   color: var(--text-color);
+  line-height: 1.6;
 }
 
-/* Layout principal */
+/* ============ LAYOUT PRINCIPAL ============ */
 .full-width-container {
   display: flex;
   min-height: 100vh;
-  height: calc(170vh - 120px);
-  /* Ajuste según navbar/footer */
+  height: calc(170vh - 120px); /* Ajuste según navbar/footer */
   overflow: hidden;
 }
 
-/* Sección de lista de jugadores */
+/* ============ SECCIÓN DE LISTA DE JUGADORES ============ */
 .player-list-section {
   width: 280px;
   background-color: var(--primary-color);
   padding: 1rem 0;
   overflow-y: auto;
   z-index: 1;
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary-color) var(--primary-color);
+}
+
+.player-list-section::-webkit-scrollbar {
+  width: 6px;
+}
+
+.player-list-section::-webkit-scrollbar-track {
+  background: var(--primary-color);
+}
+
+.player-list-section::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color);
+  border-radius: 3px;
 }
 
 .player-item {
@@ -45,7 +78,7 @@ body {
   padding: 1rem 1.5rem;
   color: var(--white);
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all var(--transition-medium) ease;
   border-left: 4px solid transparent;
 }
 
@@ -65,9 +98,14 @@ body {
   margin-right: 1rem;
   object-fit: cover;
   border: 2px solid rgba(255, 255, 255, 0.3);
+  transition: transform var(--transition-fast) ease;
 }
 
-/* Sección de imagen del jugador */
+.player-item:hover .player-icon {
+  transform: scale(1.05);
+}
+
+/* ============ SECCIÓN DE IMAGEN DEL JUGADOR ============ */
 .player-image-section {
   width: 35%;
   background: linear-gradient(to bottom, var(--gray-light), var(--gray-medium));
@@ -82,9 +120,10 @@ body {
 .player-image {
   max-height: 155vh;
   width: auto;
-  transition: transform 0.5s ease, opacity 0.5s ease;
+  transition: transform var(--transition-slow) ease, opacity var(--transition-slow) ease;
   position: relative;
   z-index: 1;
+  will-change: transform, opacity;
 }
 
 /* Efecto de animación para cambio de imagen */
@@ -95,12 +134,15 @@ body {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg,
-      rgba(10, 46, 82, 0) 35%,
-      rgba(10, 46, 82, 0.8) 50%,
-      rgba(10, 46, 82, 0) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(10, 46, 82, 0) 35%,
+    rgba(10, 46, 82, 0.8) 50%,
+    rgba(10, 46, 82, 0) 100%
+  );
   z-index: 2;
   transition: left 0.6s ease;
+  pointer-events: none;
 }
 
 .player-image.hidden {
@@ -112,12 +154,27 @@ body {
   left: 100%;
 }
 
-/* Sección de información del jugador */
+/* ============ SECCIÓN DE INFORMACIÓN DEL JUGADOR ============ */
 .player-info-section {
   flex: 1;
   background-color: var(--white);
   padding: 2rem;
   overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--gray-medium) var(--white);
+}
+
+.player-info-section::-webkit-scrollbar {
+  width: 6px;
+}
+
+.player-info-section::-webkit-scrollbar-track {
+  background: var(--white);
+}
+
+.player-info-section::-webkit-scrollbar-thumb {
+  background-color: var(--gray-medium);
+  border-radius: 3px;
 }
 
 .main-title {
@@ -129,12 +186,19 @@ body {
   border-bottom: 2px solid var(--dark-bg);
 }
 
-/* Componentes de estadísticas */
+/* ============ COMPONENTES DE ESTADÍSTICAS ============ */
 .stat-card {
   background-color: var(--gray-light);
-  border-radius: 8px;
+  border-radius: var(--border-radius-md);
   padding: 1rem;
   margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast) ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
 }
 
 .stat-detail-item {
@@ -144,20 +208,25 @@ body {
 .stat-name {
   font-weight: 600;
   color: var(--primary-color);
+  margin-bottom: 0.5rem;
 }
 
 .progress {
   height: 8px;
   background-color: var(--gray-medium);
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .progress-bar {
   background-color: var(--primary-color);
+  transition: width 0.6s ease;
 }
 
-/* Gráfico hexagonal */
+/* ============ GRÁFICO HEXAGONAL ============ */
 .hexagon-container {
-  width: 320px;
+  width: 100%;
+  max-width: 320px;
   height: 320px;
   margin: 2rem auto;
   position: relative;
@@ -171,7 +240,9 @@ body {
     radial-gradient(circle at center, transparent 0%, transparent 24%, var(--gray-light) 25%, transparent 26%),
     radial-gradient(circle at center, transparent 0%, transparent 49%, var(--gray-light) 50%, transparent 51%),
     radial-gradient(circle at center, transparent 0%, transparent 74%, var(--gray-light) 75%, transparent 76%),
-    conic-gradient(from 60deg, var(--gray-light) 0%, var(--gray-light) 16.66%, transparent 16.66%, transparent 33.33%, var(--gray-light) 33.33%, var(--gray-light) 50%, transparent 50%, transparent 66.66%, var(--gray-light) 66.66%, var(--gray-light) 83.33%, transparent 83.33%, transparent 100%);
+    conic-gradient(from 60deg, var(--gray-light) 0%, var(--gray-light) 16.66%, transparent 16.66%, transparent 33.33%, 
+    var(--gray-light) 33.33%, var(--gray-light) 50%, transparent 50%, transparent 66.66%, 
+    var(--gray-light) 66.66%, var(--gray-light) 83.33%, transparent 83.33%, transparent 100%);
   background-repeat: no-repeat;
 }
 
@@ -192,6 +263,7 @@ body {
   border-radius: 50%;
   transform: translate(-50%, -50%);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  transition: all var(--transition-medium) ease;
 }
 
 .stat-line {
@@ -199,6 +271,7 @@ body {
   height: 2px;
   background-color: var(--primary-color);
   transform-origin: left center;
+  transition: all var(--transition-medium) ease;
 }
 
 .stat-labels {
@@ -215,6 +288,7 @@ body {
   text-align: center;
   width: 80px;
   transform: translateX(-50%);
+  transition: all var(--transition-medium) ease;
 }
 
 /* Posicionamiento de etiquetas del gráfico */
@@ -248,7 +322,7 @@ body {
   left: 5%;
 }
 
-/* Habilidades especiales */
+/* ============ HABILIDADES ESPECIALES ============ */
 .skills-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -259,15 +333,15 @@ body {
   display: flex;
   align-items: center;
   padding: 0.75rem;
-  border-radius: 8px;
-  transition: all 0.3s ease;
+  border-radius: var(--border-radius-sm);
+  transition: all var(--transition-medium) ease;
   background: linear-gradient(to right, var(--gray-light), var(--gray-medium));
   border-left: 3px solid var(--primary-color);
 }
 
 .skill-item:hover {
   transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow-sm);
 }
 
 .skill-name {
@@ -275,12 +349,13 @@ body {
   color: var(--primary-color);
 }
 
-/* Nota de Ego */
+/* ============ NOTA DE EGO ============ */
 .ego-note {
   background-color: #f8f9fa;
   border-left: 4px solid var(--primary-color);
   padding: 1rem;
-  border-radius: 0 8px 8px 0;
+  border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;
+  font-style: italic;
 }
 
 .ego-note p::before,
@@ -288,14 +363,15 @@ body {
   content: '"';
   font-size: 1.5rem;
   color: var(--primary-color);
+  line-height: 0;
 }
 
-/* Sección de Uniformes */
+/* ============ SECCIÓN DE UNIFORMES ============ */
 .uniforms-section {
   background-color: #f8f9fa;
   padding: 1rem;
-  border-radius: 8px;
-  border-left: 4px solid #0a2e52;
+  border-radius: var(--border-radius-md);
+  border-left: 4px solid var(--primary-color);
 }
 
 .uniforms-grid {
@@ -306,21 +382,30 @@ body {
 }
 
 .uniform-card {
-  background: white;
-  border-radius: 8px;
+  background: var(--white);
+  border-radius: var(--border-radius-sm);
   overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-medium) ease;
+  position: relative;
+  cursor: pointer;
 }
 
 .uniform-card:hover {
   transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
 }
 
 .uniform-card img {
   width: 100%;
   height: auto;
+  aspect-ratio: 1/1.3;
   object-fit: cover;
+  transition: transform var(--transition-medium) ease;
+}
+
+.uniform-card:hover img {
+  transform: scale(1.05);
 }
 
 .uniform-card p {
@@ -328,14 +413,13 @@ body {
   text-align: center;
   font-size: 0.8rem;
   margin: 0;
-  background: #0a2e52;
-  color: white;
+  background: var(--primary-color);
+  color: var(--white);
+  transition: background var(--transition-medium) ease;
 }
 
-/* Mejoras para los uniformes */
-.uniform-card {
-  cursor: pointer;
-  position: relative;
+.uniform-card:hover p {
+  background: var(--secondary-color);
 }
 
 .uniform-card::after {
@@ -347,28 +431,21 @@ body {
   bottom: 0;
   background: rgba(10, 46, 82, 0.3);
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity var(--transition-medium) ease;
 }
 
 .uniform-card:hover::after {
   opacity: 1;
 }
 
-.uniform-card p {
-  transition: background 0.3s ease;
-}
-
-.uniform-card:hover p {
-  background: #134184;
-}
-
-
-/* Filtros y búsqueda */
+/* ============ FILTROS Y BÚSQUEDA ============ */
 .player-search-container {
   position: sticky;
   top: 0;
   z-index: 10;
+  background-color: var(--primary-color);
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  padding: 1rem;
 }
 
 .player-search-container input,
@@ -376,6 +453,7 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: var(--white);
+  transition: all var(--transition-medium) ease;
 }
 
 .player-search-container input::placeholder {
@@ -386,27 +464,29 @@ body {
 .player-search-container select:focus {
   background-color: rgba(255, 255, 255, 0.2);
   color: var(--white);
-  border-color: var(--primary-color);
-  box-shadow: 0 0 0 0.25rem rgba(10, 46, 82, 0.25);
+  border-color: var(--white);
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.1);
 }
 
 #filtersContainer option {
-  background-color: #0a2e52;
+  background-color: var(--primary-color);
 }
-
 
 /* Botón de filtros */
 #toggleFiltersBtn {
   background-color: var(--primary-color);
   border: none;
-  transition: all 0.3s ease;
+  transition: all var(--transition-medium) ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #toggleFiltersBtn:hover {
   background-color: var(--secondary-color);
   transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
 }
-
 
 .sort-options-container select {
   background-color: rgba(255, 255, 255, 0.1);
@@ -417,16 +497,15 @@ body {
 
 .sort-options-container select:focus {
   background-color: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 0 0.25rem rgba(10, 46, 82, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.1);
 }
 
-/* Animaciones */
+/* ============ ANIMACIONES ============ */
 @keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(-10px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
@@ -435,10 +514,23 @@ body {
 
 .filters-show {
   display: block !important;
-  animation: fadeIn 0.3s ease;
+  animation: fadeIn var(--transition-medium) ease;
 }
 
-/* Responsive */
+/* ============ ACCESIBILIDAD ============ */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ============ RESPONSIVE ============ */
 @media (max-width: 992px) {
   .full-width-container {
     flex-direction: column;
@@ -453,16 +545,37 @@ body {
 
   .player-info-section {
     order: 2;
-    padding: 2rem;
+    padding: 1.5rem;
   }
 
   .player-image-section {
     width: 100%;
     height: auto;
-    padding: 2rem;
+    padding: 1.5rem;
+    order: 3;
   }
 
   .player-image {
     max-height: 300px;
+  }
+  
+  .hexagon-container {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 576px) {
+  .player-info-section,
+  .player-image-section {
+    padding: 1rem;
+  }
+  
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .uniforms-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

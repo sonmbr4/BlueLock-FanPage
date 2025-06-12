@@ -1,0 +1,122 @@
+{
+  "equipos": {
+    "equipoZ": {
+      "nombre": "Equipo Z",
+      "partidosGanados": 3,
+      "partidosPerdidos": 1,
+      "golesAnotados": 10,
+      "jugadorDestacado": {
+        "nombre": "Yoichi Isagi",
+        "goles": 3,
+        "imagen": "./assets/imagenes/Jugadores/icono/Yoichi-Isagi-Icon.png"
+      },
+      "formacion": "4-3-3",
+      "jugadores": [
+        {
+          "id": "isagi",
+          "posicion": "pos-at1"
+        },
+        {
+          "id": "bachira",
+          "posicion": "pos-at3"
+        },
+        {
+          "id": "Rensuke",
+          "posicion": "pos-at2"
+        },
+        {
+          "id": "Gagamaru",
+          "posicion": "pos-mf1"
+        },
+        {
+          "id": "Jingo",
+          "posicion": "pos-mf2"
+        },
+        {
+          "id": "Yudai",
+          "posicion": "pos-mf3"
+        },
+        {
+          "id": "Naruhaya",
+          "posicion": "pos-df1"
+        },
+        {
+          "id": "Chigiri",
+          "posicion": "pos-df2"
+        },
+        {
+          "id": "Wataru",
+          "posicion": "pos-df3"
+        },
+        {
+          "id": "Gurimu",
+          "posicion": "pos-df4"
+        },
+        {
+          "id": "Okuhito",
+          "posicion": "pos-gk"
+        }
+      ]
+    },
+    "equipo withe": {
+      "nombre": "Equipo Withe",
+      "partidosGanados":3,
+      "partidosPerdidos": 2,
+      "golesAnotados": 15,
+      "jugadorDestacado": {
+        "nombre": "Nagi Seishiro",
+        "goles": 8,
+        "imagen": "./assets/imagenes/Jugadores/icono/Seishiro-Nagi-Icon.png"
+      },
+      "formacion": "Indefinida",
+      "jugadores": [
+        {
+          "id":"Barou",
+          "posicion":"pos-df1"
+        },
+        {
+          "id":"Nagi",
+          "posicion":"pos-df2"
+        },
+        {
+          "id":"isagi",
+          "posicion":"pos-df3"
+        },
+        {
+          "id":"Chigiri",
+          "posicion":"pos-df4"
+        }
+      ]
+    },
+    "equipo Red":{
+      "nombre":"Equipo Red",
+      "partidosGanados": 2,
+      "partidosPerdidos": 0,
+      "golesAnotados":10,
+      "jugadorDestacado":{
+        "nombre":"Rin Itoshi",
+        "goles":4, 
+        "imagen":"./assets/imagenes/Jugadores/icono/Rin_Itoshi_Icon.png"
+      },
+      "formacion":"Indefinida",
+      "jugadores":[
+        {
+          "id":"Jyubei",
+          "posicion":"pos-df7"
+        },
+        {
+          "id":"bachira",
+          "posicion":"pos-df5"
+        },
+        {
+          "id":"Aoshi",
+          "posicion":"pos-df6"
+        },
+        {
+          "id":"Rin",
+          "posicion":"pos-at1"
+        }
+      ]
+    }
+  }
+}
