@@ -23,3 +23,20 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// Pantalla de carga
+document.addEventListener("DOMContentLoaded", () => {
+  const loadingScreen = document.getElementById("loading-screen");
+  const pentagonFill = document.getElementById("pentagon-fill");
+
+  setTimeout(() => {
+    pentagonFill.style.height = "100%"; // Llena el pentágono
+  }, 100);
+
+  setTimeout(() => {
+    loadingScreen.classList.add("hidden");
+    setTimeout(() => {
+      loadingScreen.remove();
+    }, 500);
+  }, 3000);
+});

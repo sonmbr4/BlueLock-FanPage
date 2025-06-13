@@ -514,7 +514,7 @@
             "name":"Mikage Reo",
             "position":"Delantero | Equipo V | Número 9",
             "rankingInicial":222,
-            "rankingActual":11,
+            "rankingActual":10,
             "image":"assets/imagenes/Jugadores/Reo_Mikage_suit_anime_design.webp",
             "icon":"assets/imagenes/Jugadores/icono/Reo-Mikage-Icon.png",
             "stats":{
@@ -818,6 +818,34 @@
                 {
                     "type":"Blue Lock Eleven",
                     "image":"./assets/imagenes/Jugadores/Uniforme/Hiori/Hiori-Yo-BlueLock-Eleven.png"
+                }
+            ]
+        },
+        "Shidou":{
+            "name":"Shidou Ryusei",
+            "position":"Delantero Número 111",
+            "rankingInicial": 111,
+            "rankingActual":"desconocido",
+            "image":"./assets/imagenes/Jugadores/Shidou-Ryusei-S2-Uniform.png",
+            "icon":"./assets/imagenes/Jugadores/icono/Shidou_Ryusei_Icon.png",
+            "stats":{
+                "Velocidad": 90,
+                "defensa": 50,
+                "pase": 75,
+                "dribble": 88,
+                "tiro": 99,
+                "ofensiva": 98
+            },
+            "skills":[
+                "Chilena BigBang",
+                "Instinto Asesino",
+                "Movimientos Caóticos"
+            ],
+            "egoNote":"¡JA! Finalmente... un verdadero monstruo. No juega al fútbol, lo viola. Cada remate suyo es un grito de guerra... ¿pero qué pasa cuando el campo no arde? Hasta los demonios necesitan un propósito.",
+            "uniforms":[
+                {
+                    "type":"Japón U20",
+                    "image":"./assets/imagenes/Jugadores/Uniforme/Shidou/Shidou-Ryusen-Uniform-U20.png"
                 }
             ]
         }
